@@ -1,0 +1,21 @@
+.about-us {
+    padding: 79px 0px 71px 21px;
+    ;
+}
+
+.about-us__heading-1 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 65px;
+    text-align: left;
+}
+
+.about-us__text {
+    padding-top: 13px;
+    min-height: 214px;
+    max-width: 1080px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 32px;
+}

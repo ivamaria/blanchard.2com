@@ -1,0 +1,76 @@
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #000000;
+}
+
+.footer__icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__block-icon {
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+
+/*.icon-vk {
+  background-image: url('../img/vk.svg');
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+.icon-inst {
+  background-image: url('../img/instagram.svg');
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+.icon-fb {
+  background-image: url('../img/fb.svg');
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}*/
+
+.footer__container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-vk:hover svg path {
+    fill: #fff;
+}
+
+.icon-vk:active svg path {
+    fill: var(--active);
+}
+
+.icon-fb:hover svg path {
+    fill: #fff;
+}
+
+.icon-fb:active svg path {
+    fill: var(--active);
+}
+
+.icon-inst:hover svg path {
+    fill: #fff;
+}
+
+.icon-inst:active svg path {
+    fill: var(--active);
+}

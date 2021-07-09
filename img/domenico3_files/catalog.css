@@ -1,0 +1,284 @@
+    .catalog {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .js-tabs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ui-tabs .ui-tabs-panel {
+        padding: 0;
+    }
+
+    .js-item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    .catalog__title {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 65px;
+        text-align: left;
+        padding-right: 50px;
+    }
+
+    .catalog__tabs-text {
+        max-width: 400px;
+    }
+
+    .js-tabs-img1 {
+        background-image: url('../img/flad1.svg');
+        background-repeat: no-repeat;
+        width: 49px;
+        height: 49px;
+    }
+
+    .js-tabs-img2 {
+        background-image: url('../img/flag2.svg');
+        background-repeat: no-repeat;
+        width: 49px;
+        height: 49px;
+    }
+
+    .js-tabs-img3 {
+        background-image: url('../img/flag3.svg');
+        background-repeat: no-repeat;
+        width: 49px;
+        height: 49px;
+    }
+
+    .js-tabs-img4 {
+        background-image: url('../img/flag4.svg');
+        background-repeat: no-repeat;
+        width: 49px;
+        height: 49px;
+    }
+
+    .js-tabs-img5 {
+        background-image: url('../img/flag5.svg');
+        background-repeat: no-repeat;
+        width: 49px;
+        height: 49px;
+    }
+
+    .ui-tabs-nav,
+    .ui-corner-all,
+    .ui-helper-reset,
+    .ui-helper-clearfix,
+    .ui-widget-header {
+        background-color: transparent;
+        border: none;
+    }
+
+    .ui-widget.ui-widget-content {
+        border: none;
+    }
+
+    .anchor,
+    .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+    .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+        cursor: pointer;
+    }
+
+    .ui-tabs .ui-tabs-nav li {
+        background-color: transparent;
+        border: none;
+    }
+
+    .ui-tabs .ui-tabs-nav li:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    .is-hidden {
+        display: none;
+    }
+
+    .wrap {
+        display: flex;
+    }
+
+    .part {
+        width: 50%;
+    }
+    /*accordion*/
+
+    .questions {
+        width: 110%;
+        list-style: none;
+    }
+
+    .question:first-child {
+        border-top: 1px solid lightgray;
+    }
+
+    .question {
+        min-height: 117px;
+        margin-top: -1px;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid lightgray;
+        transition: border-color .3s ease;
+    }
+
+    .heading {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 40px 120px 40px 40px;
+        font-size: 24px;
+        cursor: pointer;
+        transition: color .3s ease;
+    }
+
+    .content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .catalog__acc-artists {
+        column-count: 3;
+    }
+
+    .text {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+        border: none;
+        background: transparent;
+        font-weight: normal;
+        color: #333;
+    }
+
+    .question:first-child:hover,
+    .question:hover,
+    .question:focus {
+        border-color: var(--font-color);
+    }
+
+    .head-icon {
+        position: absolute;
+        top: 57px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: lightgray;
+        transform: translateY(-50%);
+        transition: background-color.3s, .6s ease, transform .3s, .6s ease;
+    }
+
+    .head-icon::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(27%) rotate(151deg);
+        background-color: #000;
+        transition: background-color, .3s ease;
+    }
+
+    .head-icon::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 39%;
+        transform: translateY(-44%) rotate(120deg);
+        background-color: #000;
+        transition: background-color, .3s ease;
+    }
+
+    .head-icon::before {
+        width: 23%;
+        height: 1px;
+    }
+
+    .head-icon::after {
+        width: 1px;
+        height: 23%;
+    }
+
+    .heading:hover,
+    .heading:focus {
+        color: var(--font-color);
+        outline: none;
+        border: none;
+        font-size: 24px;
+        background-color: transparent;
+    }
+
+    .heading:hover .head-icon,
+    .heading:focus .head-icon {
+        background-color: var(--font-color);
+        font-size: 24px;
+    }
+
+    .heading:hover .head-icon::before,
+    .heading:hover .head-icon::after,
+    .heading:focus .head-icon::before,
+    .heading:focus .head-icon::after {
+        background-color: #fff;
+    }
+
+    .heading.ui-accordion-header-active .head-icon {
+        transform: translateY(-45%) rotate(182deg);
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+        font-size: 24px;
+        padding-top: 30px;
+    }
+
+    .js-custom-tab {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .question-block-frame {
+        background-color: transparent;
+        max-width: 275px;
+        min-height: 189px;
+        padding: 9px;
+        border: 2px solid #B7B7B7
+    }
+
+    .qestion-frame {
+        text-indent: 30px;
+        border: 2px solid #B7B7B7;
+        width: 251px;
+        height: 165px;
+        background-color: #B7B7B7;
+    }
+
+    .qestion-frame__content {
+        display: flex;
+    }
+
+    .qestion-frame-two {
+        width: 275px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .js-custom-img {
+        max-width: 750px;
+        height: 470px;
+    }
