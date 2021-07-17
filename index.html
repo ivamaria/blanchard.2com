@@ -10,10 +10,6 @@
 
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-
-
-
-
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -23,8 +19,7 @@
     <link rel="preload" href="fonts/opensans-extrabold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/opensans-light.woff2" as="font" type="font/woff2" crossorigin>
-    <title>Document</title>
-
+    <title>Художественная галерея</title>
     <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="css/normolize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -38,10 +33,6 @@
     <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/footer.css">
-
-
-
-
 </head>
 
 <body>
@@ -50,8 +41,8 @@
             <div class="container header__first-container">
                 <button class="header__burger" aria-label="Открыть меню">
                     <span></span>
-                  </button>
-                <img src="img/logo.svg" alt="" class="header__logo">
+                </button>
+                <img src="img/logo.svg" alt="blanchard logo" class="header__logo">
                 <nav class="nav-menu">
 
                     <ul class="nav-list">
@@ -81,17 +72,10 @@
                 </nav>
                 <a href="#" class="header-login first-login">
                     <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                  d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
-                  fill="white" />
-          </svg> Войти
-                </a>
-
-                <form class="header-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                    <button class="search-button search"></button>
-                </form>
-
-
+                        <path
+                            d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                            fill="white" />
+                    </svg> Войти</a>
 
             </div>
         </div>
@@ -104,94 +88,115 @@
                     <ul class="main-list">
                         <li class="main-list__item">
                             <button class="main-list__btn " data-path="one">
-                        <strong class="main-list__heading">Реализм</strong>
-                        <span class="main-list__icon"></span>
-                      </button>
+                                <strong class="main-list__heading">Реализм</strong>
+
+                            </button>
                             <ul class="main-list__dropdown" data-simplebar data-target="one">
-
-                                <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link1">Фридрих</a></li>
-                                <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link2">Леонардо</a></li>
-                                <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link3">Тинторрето</a></li>
-                                <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link4">Фридрих</a></li>
-                                <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link1">Леонардо</a></li>
+                                <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link1"><span>Фридрих</span></a>
+                                </li>
+                                <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link2"><span>Леонардо</span></a>
+                                </li>
+                                <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link3"><span>Тинторрето</span></a>
+                                </li>
+                                <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link4"><span>Фридрих</span></a>
+                                </li>
+                                <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link1"><span>Леонардо</span></a>
+                                </li>
                             </ul>
-
 
                             <li class="main-list__item">
                                 <button class="main-list__btn" data-path="two">
-                          <strong class="main-list__heading">Импрессионизм</strong>
-                          <span class="main-list__icon"></span>
-                        </button>
+                                <strong class="main-list__heading">Импрессионизм</strong>
+
+                            </button>
                                 <ul class="main-list__dropdown" data-simplebar data-target="two">
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link6">Тинторрето</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link7">Фридрих</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link8">Леонардо</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link9">Тинторрето</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link6">Фридрих</a></li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link     main-list__drodown-link6"><span>Тинторрето</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link7"><span>Фридрих</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link8"><span>Леонардо</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link9"><span>Тинторрето</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link6"><span>Фридрих</span></a>
+                                    </li>
 
                                 </ul>
                             </li>
 
                             <li class="main-list__item">
                                 <button class="main-list__btn" data-path="three">
-                        <strong class="main-list__heading">Постимпрессионизм</strong>
-                        <span class="main-list__icon"></span>
-                      </button>
+                                <strong class="main-list__heading">Постимпрессионизм</strong>
+
+                            </button>
                                 <ul class="main-list__dropdown" data-simplebar data-target="three">
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link  main-list__drodown-link11">Тинторрето</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link  main-list__drodown-link12">Фридрих</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link  main-list__drodown-link13">Леонардо</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link  main-list__drodown-link14">Тинторрето</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link  main-list__drodown-link11">Фридрих</a></li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link  main-list__drodown-link11"><span>Тинторрето</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link  main-list__drodown-link12"><span>Фридрих</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link  main-list__drodown-link13"><span>Леонардо</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link  main-list__drodown-link14"><span>Тинторрето</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link  main-list__drodown-link11"><span>Фридрих</span></a>
+                                    </li>
 
                                 </ul>
                             </li>
 
                             <li class="main-list__item">
                                 <button class="main-list__btn" data-path="four">
-                      <strong class="main-list__heading">Авангард</strong>
-                      <span class="main-list__icon"></span>
-                    </button>
+                                <strong class="main-list__heading">Авангард</strong>
+
+                            </button>
                                 <ul class="main-list__dropdown" data-simplebar data-target="four">
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link16">Тинторрето</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link17">Фридрих</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link18">Леонардо</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link19">Тинторрето</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link16">Фридрих</a></li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link16"><span>Тинторрето</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link17"><span>Фридрих</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link18"><span>Леонардо</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link19"><span>Тинторрето</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link16"><span>Фридрих</span></a>
+                                    </li>
                                 </ul>
                             </li>
 
                             <li class="main-list__item">
                                 <button class="main-list__btn" data-path="five">
-                        <strong class="main-list__heading">Футуризм</strong>
-                        <span class="main-list__icon"></span>
-                      </button>
-                                <ul class="main-list__dropdown" data-simplebar data-target="five">
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link21">Тинторрето</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link22">Фридрих</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link23">Леонардо</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link24">Тинторрето</a></li>
-                                    <li class="main-list__drodown-item"><a href="" class="main-list__drodown-link main-list__drodown-link25">Фридрих</a></li>
+                                <strong class="main-list__heading">Футуризм</strong>
 
+                            </button>
+                                <ul class="main-list__dropdown" data-simplebar data-target="five">
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link21"><span>Тинторрето</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link22"><span>Фридрих</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link23"><span>Леонардо</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link24"><span>Тинторрето</span></a>
+                                    </li>
+                                    <li class="main-list__drodown-item"><a href="#" class="main-list__drodown-link main-list__drodown-link25"><span>Фридрих</span></a>
+                                    </li>
                                 </ul>
                             </li>
                         </li>
-
                     </ul>
-
-
-
-
 
                 </nav>
                 <form class="header__bottom-search" action="/">
                     <button class="header__bottom-button" type="submit">
-<svg width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
-</svg>
+                        <svg width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="6.8678" height="1.71695"
+                                transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"
+                                fill="currentColor" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
 
-</button>
                     <input class="header__bottom-search-input" type="search" placeholder="Поиск по сайту" aria-label="">
                 </form>
             </div>
@@ -205,18 +210,13 @@
                 <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
                 <p class="hero__descriptions">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
                 </p>
-
                 <a href="#" class="hero__first-btn">Подписаться на рассылку</a>
-
-
             </div>
 
             <div class="hero__img-container">
-
                 <div class="hero__image hero__image-trust"></div>
                 <div class="hero__image hero__image-muzey"></div>
                 <div class="hero__image hero__image-hero"></div>
-
             </div>
         </section>
 
@@ -232,101 +232,120 @@
                     а значит, должны быть разоблачены.
                 </p>
             </div>
-
-
         </section>
 
-
-
-
         <section class="gallery">
-            <div class="container gallery-container">
-                <div class="gallery-one">
+            <div class="container">
+                <div class="content-wrap">
+                    <div class="gallery-left">
+                        <h2 class="gallery-title">Галерея</h2>
+                        <p class="gallery-text__filter">Фильтр:</p>
 
-                    <h2 class="gallary-heading">
-                        Галерея
-                    </h2>
-                    <div class="gallary-desc">Фильтр:</div>
-                    <div class="gallary-selector">
-                        <select name="select" id="selectCustom">
-                <option value="">Живопись</option>
-                <option value="Направление">Рисунок</option>
-                <option value="Техника">Скульптура</option>
-
-              </select>
+                        <div class="gallary-selector">
+                            <select name="select" id="selectCustom">
+                                <option value="Живопись">Живопись</option>
+                                <option value="Направление">Рисунок</option>
+                                <option value="Техника">Скульптура</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="gallary-down">
-                        <p class="gallary-text">
-                            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="gallary-textlink" href="">авторизуйтесь,</a> либо воспользуйтесь лицензией.
-                        </p>
+                    <div class="swiper-container gallery-swiper">
+                        <div class="gallery-navigation">
+                            <button class="gallery-nav-btn gallery-prev"></button>
+                            <div class="gallery-pagination"></div>
+                            <button class="gallery-nav-btn gallery-next"></button>
+                        </div>
+                        <div class="swiper-wrapper gallery-wrapper">
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider1.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider2.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider3.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider7.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider8.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider9.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider24.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider10.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider11.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider12.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider13.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider14.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider4.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider5.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider6.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider15.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider16.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider17.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider17.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider18.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider19.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider20.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider21.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider22.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider23.jpg" alt="">
+                            </a>
+                            <a class="swiper-slide gallery-slide" href="#">
+                                <img class="gallery-image" src="img/slider24.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-last">
+
+                        <div class="gallery-last-content">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste assumenda omnis facilis, aperiam quisquam.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
 
-
-                <div class="gallery__2">
-
-
-                    <!--slider-->
-                    <div class="image-slider swiper-container">
-
-
-                        <!-- If we need navigation buttons -->
-                        <div class="gallery__top-btn">
-                            <button class="swiper-button-prev"></button>
-                            <div class="swiper-pagination pag-1"></div>
-                            <button class="swiper-button-next"></button>
-                        </div>
-
-
-                        <div class="image-slider__wrapper swiper-wrapper">
-
-
-                            <!-- Slides -->
-                            <div class="image-slider__slide swiper-slide image-slider__image1">
-
-                                <img src="img/gallery-img1.png" alt="">
-
-                            </div>
-                            <div class="image-slider__slide swiper-slide image-slider__image2"><img src="img/gallary-img5.png" alt=""></div>
-                            <div class="image-slider__slide swiper-slide image-slider__image3"> <img src="img/gallery-m=img2.png" alt=""> </div>
-
-                            <div class="image-slider__slide swiper-slide image-slider__image4"><img src="img/gallary4.png" alt=""> </div>
-                            <div class="image-slider__slide swiper-slide image-slider__image5"><img src="img/slider3.jpg" alt=""> </div>
-                            <div class="image-slider__slide swiper-slide image-slider__image6"> <img src="img/gallary6.png" alt=""></div>
-                            <div class="image-slider__slide swiper-slide image-slider__image7">
-                                <img src="img/slider7.jpg" alt=""> </div>
-
-                            <div class="image-slider__slide swiper-slide image-slider__image8">
-                                <img src="img/slider8.jpg" alt=""> </div>
-                            <div class="image-slider__slide swiper-slide image-slider__image9"> <img src="img/slider9.jpg" alt=""></div>
-                            <div class="image-slider__slide swiper-slide image-slider__image10"><img src="img/slider10.jpg" alt=""> </div>
-                            <div class="image-slider__slide swiper-slide image-slider__image11"> <img src="img/slider11.jpg" alt=""></div>
-
-                            <div class="image-slider__slide swiper-slide image-slider__image12"><img src="img/slider12.jpg" alt=""> </div>
-                            <div class="image-slider__slide swiper-slide image-slider__image13"> <img src="img/slider13.jpg" alt=""></div>
-                            <div class="image-slider__slide swiper-slide image-slider__image14"><img src="img/slider14.jpg" alt=""> </div>
-                            <div class="image-slider__slide swiper-slide image-slider__image15"><img src="img/slider15.jpg" alt=""> </div>
-
-                            <div class="image-slider__slide swiper-slide image-slider__image16"><img src="img/slider16.jpg" alt="">
-                            </div>
-                            <div class="image-slider__slide swiper-slide image-slider__image17"><img src="img/slider17.jpg" alt="">
-                            </div>
-                            <div class="image-slider__slide swiper-slide image-slider__image18"><img src="img/slider18.jpg" alt="">
-                            </div>
-                            <div class="image-slider__slide swiper-slide image-slider__image19"><img src="img/slider19.jpg" alt="">
-                            </div>
-
-                            <div class="image-slider__slide swiper-slide image-slider__image20"><img src="img/slider20.jpg" alt=""> </div>
-                            <div class="image-slider__slide swiper-slide image-slider__image21"> <img src="img/slider21.jpg" alt=""></div>
-                            <div class="image-slider__slide swiper-slide image-slider__image22"><img src="img/slider22.jpg" alt=""> </div>
-                            <div class="image-slider__slide swiper-slide image-slider__image23"> <img src="img/slider23.jpg" alt=""></div>
-
-                            <div class="image-slider__slide swiper-slide image-slider__image24"><img src="img/slider24.jpg" alt=""> </div>
-
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -354,8 +373,6 @@
                         </ul>
 
 
-
-
                         <div id="tabs-1">
                             <p class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей
                                 картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
@@ -365,9 +382,11 @@
                                     <div class="js-custom-tab" data-target="one">
                                         <img class="js-custom-img" src="img/img1.jpg" alt="Деятель">
                                         <h3 class="catalog-title-two is-active">Доменико Гирландайо</h3>
-                                        <p class="catalog-text__two"><span class="catalog-text__gray">2&nbsp;июня 1448&nbsp;&mdash; 11января 1494.&nbsp;</span><br> Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его
-                                            брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными
-                                            подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).</p>
+                                        <p class="catalog-text__two"><span class="catalog-text__gray">2&nbsp;июня
+                                                1448&nbsp;&mdash; 11января
+                                                1494.&nbsp;</span><br> Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской,
+                                            где юный Микеланджело в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей
+                                            (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).</p>
                                     </div>
 
                                     <div class="js-custom-tab" data-target="one">
@@ -396,7 +415,8 @@
                                     <div class="js-custom-tab" data-target="five">
                                         <img class="js-custom-img" src="img/artist5.jpg" alt="Деятель">
                                         <h3 class="catalog-title-two">Бонсиньори, Франческо</h3>
-                                        <p class="catalog-text__two"> Франческо Бонсиньори — итальянский живописец, писавший картины в стиле Ренессанса. Википедия Дата и место рождения: 1460 г., Верона, Италия Дата и место смерти: 2 июля 1519 г., Кальдьеро, Италия</p>
+                                        <p class="catalog-text__two"> Франческо Бонсиньори — итальянский живописец, писавший картины в стиле Ренессанса. Википедия Дата и место рождения: 1460 г., Верона, Италия Дата и место смерти: 2 июля 1519 г., Кальдьеро, Италия
+                                        </p>
                                     </div>
 
 
@@ -545,7 +565,7 @@
                                 </div>
 
 
-                                <div class="part">
+                                <div class="part-2">
                                     <div class="accordion-item">
                                         <ul class="questions js-accordion">
                                             <li class="question">
@@ -558,37 +578,58 @@
 
                                                 <div class="content">
                                                     <ul class="catalog__acc-artists ">
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="one">Бенедетто ди Биндо</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="two">  Бергоньоне, Амброджо</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="three">Биссоло, Франческо</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="four">Больтраффио, Джованни</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="one">Бенедетто ди
+                                                                Биндо</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="two"> Бергоньоне,
+                                                                Амброджо</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="three">Биссоло,
+                                                                Франческо</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="four">Больтраффио,
+                                                                Джованни</button></li>
 
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="five">Бонсиньори, Франческо</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="six"> Биссоло, Франческо</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="seven">Джованни Больтраффио </button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="eight">Джованни Бонсиньори, </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="five">Бонсиньори,
+                                                                Франческо</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="six"> Биссоло,
+                                                                Франческо</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="seven">Джованни Больтраффио
+                                                            </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="eight">Джованни Бонсиньори,
+                                                            </button></li>
 
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="nine">Франческо Боттичини,</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="ten">  Рафаэлло Брамантино Бреа, </button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="eleven">Людовико Бьяджо д’Антонио Туччи </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="nine">Франческо
+                                                                Боттичини,</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="ten"> Рафаэлло Брамантино Бреа,
+                                                            </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="eleven">Людовико Бьяджо
+                                                                д’Антонио Туччи </button></li>
                                                         <li><button class="catalog__artist js-custom-tab" data-path="twelve">Веккьетта</button></li>
 
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="thirteen"> Андреа Верроккьо </button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="fourteen"> Доменико Гирландайо </button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="fifteeen">Беноццо Гоццоли Граначчи,</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="sixteen"> Франческо Грегорио ди Чекко</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="thirteen"> Андреа Верроккьо
+                                                            </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="fourteen"> Доменико Гирландайо
+                                                            </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="fifteeen">Беноццо Гоццоли
+                                                                Граначчи,</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="sixteen"> Франческо Грегорио ди
+                                                                Чекко</button></li>
 
 
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="seventeen">  Джованни да Удине </button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="eighteen">Джованни ди Паоло Джорджоне </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="seventeen"> Джованни да Удине
+                                                            </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="eighteen">Джованни ди Паоло
+                                                                Джорджоне </button></li>
 
 
 
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="nineteen"> Парентино,</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="twenty"> Бернардо Пезеллино Пьетро</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="nineteen"> Парентино,</button>
+                                                        </li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="twenty"> Бернардо Пезеллино
+                                                                Пьетро</button></li>
 
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="twentyone"> Перуджино Перуцци,</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="twentytwo">Бальдассаре Пизанелло Пинтуриккьо </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="twentyone"> Перуджино
+                                                                Перуцци,</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="twentytwo">Бальдассаре
+                                                                Пизанелло Пинтуриккьо </button></li>
 
                                                     </ul>
                                                 </div>
@@ -601,7 +642,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
 
                                             </li>
@@ -617,7 +659,8 @@
                                                         </a>
                                                         <div class="qestion-frame-two">
                                                             <h4>Здесь пока пусто</h4>
-                                                            <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                                            <p>А в галерее вы всегда можете найти что-то интересное для себя
+                                                            </p>
                                                             <span>В галерею</span>
                                                         </div>
                                                     </div>
@@ -633,7 +676,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -645,7 +689,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -657,7 +702,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -669,7 +715,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -679,7 +726,7 @@
                             </div>
                         </div>
 
-                        <!--acc-2-->
+
 
                         <div id="tabs-2">
                             <p class="catalog__text">Morbi tincidunt, dui sit amet facilisяis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus
@@ -692,7 +739,8 @@
                                         <h3 class="catalog-title-two">Доменико Гирландайо</h3>
                                         <p class="catalog-text__two">2 июня 1448 — 11 января 1494. Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
                                             Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают
-                                            знатные граждане Флоренции в костюмах того времени).</p>
+                                            знатные граждане Флоренции в костюмах того времени).
+                                        </p>
                                     </div>
 
                                     <div class="js-custom-tab" data-target="two">
@@ -721,7 +769,8 @@
                                     <div class="js-custom-tab" data-target="five">
                                         <img class="js-custom-img" src="img/artist5.jpg" alt="Деятель">
                                         <h3 class="catalog-title-two">Бонсиньори, Франческо</h3>
-                                        <p class="catalog-text__two"> Франческо Бонсиньори — итальянский живописец, писавший картины в стиле Ренессанса. Википедия Дата и место рождения: 1460 г., Верона, Италия Дата и место смерти: 2 июля 1519 г., Кальдьеро, Италия</p>
+                                        <p class="catalog-text__two"> Франческо Бонсиньори — итальянский живописец, писавший картины в стиле Ренессанса. Википедия Дата и место рождения: 1460 г., Верона, Италия Дата и место смерти: 2 июля 1519 г., Кальдьеро, Италия
+                                        </p>
                                     </div>
 
 
@@ -869,7 +918,7 @@
                                 </div>
 
 
-                                <div class="part">
+                                <div class="part-2">
                                     <div class="accordion-item">
                                         <ul class="questions js-accordion">
                                             <li class="question">
@@ -880,37 +929,56 @@
 
                                                 <div class="content">
                                                     <ul class="catalog__acc-artists ">
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="one">Бенедетто ди Биндо</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="two">  Бергоньоне, Амброджо</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="three">Биссоло, Франческо</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="four">Больтраффио, Джованни</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="one">Бенедетто ди
+                                                                Биндо</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="two"> Бергоньон
+                                                                Амброджо</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="three">Биссоло,Франческо</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="four">Больтраффио,Джованни</button></li>
 
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="five">Бонсиньори, Франческо</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="six"> Биссоло, Франческо</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="seven">Джованни Больтраффио </button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="eight">Джованни Бонсиньори, </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="five">Бонсиньори,
+                                                                Франческо</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="six"> Биссоло,
+                                                                Франческо</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="seven">Джованни Больтраффио
+                                                            </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="eight">Джованни Бонсиньори,
+                                                            </button></li>
 
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="nine">Франческо Боттичини,</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="ten">  Рафаэлло Брамантино Бреа, </button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="eleven">Людовико Бьяджо д’Антонио Туччи </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="nine">Франческо
+                                                                Боттичини,</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="ten"> Рафаэлло Брамантино Бреа,
+                                                            </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="eleven">Людовико Бьяджо
+                                                                д’Антонио Туччи </button></li>
                                                         <li><button class="catalog__artist js-custom-tab" data-path="twelve">Веккьетта</button></li>
 
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="thirteen"> Андреа Верроккьо </button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="fourteen"> Доменико Гирландайо </button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="fifteeen">Беноццо Гоццоли Граначчи,</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="sixteen"> Франческо Грегорио ди Чекко</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="thirteen"> Андреа Верроккьо
+                                                            </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="fourteen"> Доменико Гирландайо
+                                                            </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="fifteeen">Беноццо Гоццоли
+                                                                Граначчи,</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="sixteen"> Франческо Грегорио ди
+                                                                Чекко</button></li>
 
 
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="seventeen">  Джованни да Удине </button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="eighteen">Джованни ди Паоло Джорджоне </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="seventeen"> Джованни да Удине
+                                                            </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="eighteen">Джованни ди Паоло
+                                                                Джорджоне </button></li>
 
 
 
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="nineteen"> Парентино,</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="twenty"> Бернардо Пезеллино Пьетро</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="nineteen"> Парентино,</button>
+                                                        </li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="twenty"> Бернардо Пезеллино
+                                                                Пьетро</button></li>
 
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="twentyone"> Перуджино Перуцци,</button></li>
-                                                        <li><button class="catalog__artist js-custom-tab" data-path="twentytwo">Бальдассаре Пизанелло Пинтуриккьо </button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="twentyone"> Перуджино
+                                                                Перуцци,</button></li>
+                                                        <li><button class="catalog__artist js-custom-tab" data-path="twentytwo">Бальдассаре
+                                                                Пизанелло Пинтуриккьо </button></li>
 
                                                     </ul>
                                                 </div>
@@ -923,7 +991,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
 
                                             </li>
@@ -935,15 +1004,15 @@
                                                 <div class="content ">
                                                     <div class="qestion-frame__content">
                                                         <button class="question-block-frame">
-                                                        <p class="qestion-frame"></p>
-                                                    </button>
+                                                            <p class="qestion-frame"></p>
+                                                        </button>
                                                         <div class="qestion-frame-two">
                                                             <h4>Здесь пока пусто</h4>
-                                                            <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                                            <p>А в галерее вы всегда можете найти что-то интересное для себя
+                                                            </p>
                                                             <span>В галерею</span>
                                                         </div>
                                                     </div>
-
                                                 </div>
                                             </li>
 
@@ -955,7 +1024,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -967,7 +1037,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -979,7 +1050,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -991,7 +1063,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -1002,7 +1075,7 @@
 
                         </div>
 
-                        <!--acc-3-->
+
                         <div id="tabs-3">
                             <p class="catalog__text">Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora
                                 torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus
@@ -1015,7 +1088,8 @@
                                         <h3 class="catalog-title-two">Доменико Гирландайо</h3>
                                         <p class="catalog-text__two">2 июня 1448 — 11 января 1494. Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
                                             Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают
-                                            знатные граждане Флоренции в костюмах того времени).</p>
+                                            знатные граждане Флоренции в костюмах того времени).
+                                        </p>
                                     </div>
 
                                     <div class="js-custom-tab" data-target="two">
@@ -1044,7 +1118,8 @@
                                     <div class="js-custom-tab" data-target="five">
                                         <img class="js-custom-img" src="img/artist5.jpg" alt="Деятель">
                                         <h3 class="catalog-title-two">Бонсиньори, Франческо</h3>
-                                        <p class="catalog-text__two"> Франческо Бонсиньори — итальянский живописец, писавший картины в стиле Ренессанса. Википедия Дата и место рождения: 1460 г., Верона, Италия Дата и место смерти: 2 июля 1519 г., Кальдьеро, Италия</p>
+                                        <p class="catalog-text__two"> Франческо Бонсиньори — итальянский живописец, писавший картины в стиле Ренессанса. Википедия Дата и место рождения: 1460 г., Верона, Италия Дата и место смерти: 2 июля 1519 г., Кальдьеро, Италия
+                                        </p>
                                     </div>
 
 
@@ -1203,37 +1278,62 @@
 
                                                 <div class="content">
                                                     <ul class="catalog__acc-artists ">
-                                                        <li><button class="js-custom-tab" data-path="one">Бенедетто ди Биндо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="two">  Бергоньоне, Амброджо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="three">Биссоло, Франческо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="four">Больтраффио, Джованни</button></li>
+                                                        <li><button class="js-custom-tab" data-path="one">Бенедетто ди
+                                                                Биндо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="two"> Бергоньоне,
+                                                                Амброджо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="three">Биссоло,
+                                                                Франческо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="four">Больтраффио,
+                                                                Джованни</button></li>
 
-                                                        <li><button class="js-custom-tab" data-path="five">Бонсиньори, Франческо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="six"> Биссоло, Франческо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="seven">Джованни Больтраффио </button></li>
-                                                        <li><button class="js-custom-tab" data-path="eight">Джованни Бонсиньори, </button></li>
+                                                        <li><button class="js-custom-tab" data-path="five">Бонсиньори,
+                                                                Франческо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="six"> Биссоло,
+                                                                Франческо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="seven">Джованни
+                                                                Больтраффио </button></li>
+                                                        <li><button class="js-custom-tab" data-path="eight">Джованни
+                                                                Бонсиньори, </button></li>
 
-                                                        <li><button class="js-custom-tab" data-path="nine">Франческо Боттичини,</button></li>
-                                                        <li><button class="js-custom-tab" data-path="ten">  Рафаэлло Брамантино Бреа, </button></li>
-                                                        <li><button class="js-custom-tab" data-path="eleven">Людовико Бьяджо д’Антонио Туччи </button></li>
+                                                        <li><button class="js-custom-tab" data-path="nine">Франческо
+                                                                Боттичини,</button></li>
+                                                        <li><button class="js-custom-tab" data-path="ten"> Рафаэлло
+                                                                Брамантино Бреа, </button></li>
+                                                        <li><button class="js-custom-tab" data-path="eleven">Людовико
+                                                                Бьяджо д’Антонио Туччи
+                                                            </button></li>
                                                         <li><button class="js-custom-tab" data-path="twelve">Веккьетта</button></li>
 
-                                                        <li><button class="js-custom-tab" data-path="thirteen"> Андреа Верроккьо </button></li>
-                                                        <li><button class="js-custom-tab" data-path="fourteen"> Доменико Гирландайо </button></li>
-                                                        <li><button class="js-custom-tab" data-path="fifteeen">Беноццо Гоццоли Граначчи,</button></li>
-                                                        <li><button class="js-custom-tab" data-path="sixteen"> Франческо Грегорио ди Чекко</button></li>
+                                                        <li><button class="js-custom-tab" data-path="thirteen"> Андреа
+                                                                Верроккьо </button></li>
+                                                        <li><button class="js-custom-tab" data-path="fourteen"> Доменико
+                                                                Гирландайо </button></li>
+                                                        <li><button class="js-custom-tab" data-path="fifteeen">Беноццо
+                                                                Гоццоли Граначчи,</button>
+                                                        </li>
+                                                        <li><button class="js-custom-tab" data-path="sixteen"> Франческо
+                                                                Грегорио ди Чекко</button>
+                                                        </li>
 
 
-                                                        <li><button class="js-custom-tab" data-path="seventeen">  Джованни да Удине </button></li>
-                                                        <li><button class="js-custom-tab" data-path="eighteen">Джованни ди Паоло Джорджоне </button></li>
+                                                        <li><button class="js-custom-tab" data-path="seventeen">
+                                                                Джованни да Удине </button></li>
+                                                        <li><button class="js-custom-tab" data-path="eighteen">Джованни
+                                                                ди Паоло Джорджоне </button>
+                                                        </li>
 
 
+                                                        <li><button class="js-custom-tab" data-path="nineteen">
+                                                                Парентино,</button></li>
+                                                        <li><button class="js-custom-tab" data-path="twenty"> Бернардо
+                                                                Пезеллино Пьетро</button>
+                                                        </li>
 
-                                                        <li><button class="js-custom-tab" data-path="nineteen"> Парентино,</button></li>
-                                                        <li><button class="js-custom-tab" data-path="twenty"> Бернардо Пезеллино Пьетро</button></li>
-
-                                                        <li><button class="js-custom-tab" data-path="twentyone"> Перуджино Перуцци,</button></li>
-                                                        <li><button class="js-custom-tab" data-path="twentytwo">Бальдассаре Пизанелло Пинтуриккьо </button></li>
+                                                        <li><button class="js-custom-tab" data-path="twentyone">
+                                                                Перуджино Перуцци,</button></li>
+                                                        <li><button class="js-custom-tab" data-path="twentytwo">Бальдассаре Пизанелло Пинтуриккьо
+                                                            </button></li>
 
                                                     </ul>
                                                 </div>
@@ -1246,7 +1346,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
 
                                             </li>
@@ -1258,11 +1359,12 @@
                                                 <div class="content ">
                                                     <div class="qestion-frame__content">
                                                         <button class="question-block-frame">
-                                                    <p class="qestion-frame"></p>
-                                                </button>
+                                                            <p class="qestion-frame"></p>
+                                                        </button>
                                                         <div class="qestion-frame-two">
                                                             <h4>Здесь пока пусто</h4>
-                                                            <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                                            <p>А в галерее вы всегда можете найти что-то интересное для себя
+                                                            </p>
                                                             <span>В галерею</span>
                                                         </div>
                                                     </div>
@@ -1278,7 +1380,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -1290,7 +1393,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -1302,7 +1406,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -1314,7 +1419,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -1324,7 +1430,7 @@
                             </div>
 
                         </div>
-                        <!--acc-4-->
+
                         <div id="tabs-4">
                             <p class="catalog__text">Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora
                                 torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus
@@ -1337,7 +1443,8 @@
                                         <h3 class="catalog-title-two">Доменико Гирландайо</h3>
                                         <p class="catalog-text__two">2 июня 1448 — 11 января 1494. Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
                                             Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают
-                                            знатные граждане Флоренции в костюмах того времени).</p>
+                                            знатные граждане Флоренции в костюмах того времени).
+                                        </p>
                                     </div>
 
                                     <div class="js-custom-tab" data-target="two">
@@ -1365,7 +1472,8 @@
                                     <div class="js-custom-tab" data-target="five">
                                         <img class="js-custom-img" src="img/artist5.jpg" alt="Деятель">
                                         <h3 class="catalog-title-two">Бонсиньори, Франческо</h3>
-                                        <p class="catalog-text__two"> Франческо Бонсиньори — итальянский живописец, писавший картины в стиле Ренессанса. Википедия Дата и место рождения: 1460 г., Верона, Италия Дата и место смерти: 2 июля 1519 г., Кальдьеро, Италия</p>
+                                        <p class="catalog-text__two"> Франческо Бонсиньори — итальянский живописец, писавший картины в стиле Ренессанса. Википедия Дата и место рождения: 1460 г., Верона, Италия Дата и место смерти: 2 июля 1519 г., Кальдьеро, Италия
+                                        </p>
                                     </div>
 
 
@@ -1524,37 +1632,63 @@
 
                                                 <div class="content">
                                                     <ul class="catalog__acc-artists ">
-                                                        <li><button class="js-custom-tab" data-path="one">Бенедетто ди Биндо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="two">  Бергоньоне, Амброджо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="three">Биссоло, Франческо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="four">Больтраффио, Джованни</button></li>
+                                                        <li><button class="js-custom-tab" data-path="one">Бенедетто ди
+                                                                Биндо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="two"> Бергоньоне,
+                                                                Амброджо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="three">Биссоло,
+                                                                Франческо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="four">Больтраффио,
+                                                                Джованни</button></li>
 
-                                                        <li><button class="js-custom-tab" data-path="five">Бонсиньори, Франческо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="six"> Биссоло, Франческо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="seven">Джованни Больтраффио </button></li>
-                                                        <li><button class="js-custom-tab" data-path="eight">Джованни Бонсиньори, </button></li>
+                                                        <li><button class="js-custom-tab" data-path="five">Бонсиньори,
+                                                                Франческо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="six"> Биссоло,
+                                                                Франческо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="seven">Джованни
+                                                                Больтраффио </button></li>
+                                                        <li><button class="js-custom-tab" data-path="eight">Джованни
+                                                                Бонсиньори, </button></li>
 
-                                                        <li><button class="js-custom-tab" data-path="nine">Франческо Боттичини,</button></li>
-                                                        <li><button class="js-custom-tab" data-path="ten">  Рафаэлло Брамантино Бреа, </button></li>
-                                                        <li><button class="js-custom-tab" data-path="eleven">Людовико Бьяджо д’Антонио Туччи </button></li>
+                                                        <li><button class="js-custom-tab" data-path="nine">Франческо
+                                                                Боттичини,</button></li>
+                                                        <li><button class="js-custom-tab" data-path="ten"> Рафаэлло
+                                                                Брамантино Бреа, </button></li>
+                                                        <li><button class="js-custom-tab" data-path="eleven">Людовико
+                                                                Бьяджо д’Антонио Туччи
+                                                            </button></li>
                                                         <li><button class="js-custom-tab" data-path="twelve">Веккьетта</button></li>
 
-                                                        <li><button class="js-custom-tab" data-path="thirteen"> Андреа Верроккьо </button></li>
-                                                        <li><button class="js-custom-tab" data-path="fourteen"> Доменико Гирландайо </button></li>
-                                                        <li><button class="js-custom-tab" data-path="fifteeen">Беноццо Гоццоли Граначчи,</button></li>
-                                                        <li><button class="js-custom-tab" data-path="sixteen"> Франческо Грегорио ди Чекко</button></li>
+                                                        <li><button class="js-custom-tab" data-path="thirteen"> Андреа
+                                                                Верроккьо </button></li>
+                                                        <li><button class="js-custom-tab" data-path="fourteen"> Доменико
+                                                                Гирландайо </button></li>
+                                                        <li><button class="js-custom-tab" data-path="fifteeen">Беноццо
+                                                                Гоццоли Граначчи,</button>
+                                                        </li>
+                                                        <li><button class="js-custom-tab" data-path="sixteen"> Франческо
+                                                                Грегорио ди Чекко</button>
+                                                        </li>
 
 
-                                                        <li><button class="js-custom-tab" data-path="seventeen">  Джованни да Удине </button></li>
-                                                        <li><button class="js-custom-tab" data-path="eighteen">Джованни ди Паоло Джорджоне </button></li>
+                                                        <li><button class="js-custom-tab" data-path="seventeen">
+                                                                Джованни да Удине </button></li>
+                                                        <li><button class="js-custom-tab" data-path="eighteen">Джованни
+                                                                ди Паоло Джорджоне </button>
+                                                        </li>
 
 
 
-                                                        <li><button class="js-custom-tab" data-path="nineteen"> Парентино,</button></li>
-                                                        <li><button class="js-custom-tab" data-path="twenty"> Бернардо Пезеллино Пьетро</button></li>
+                                                        <li><button class="js-custom-tab" data-path="nineteen">
+                                                                Парентино,</button></li>
+                                                        <li><button class="js-custom-tab" data-path="twenty"> Бернардо
+                                                                Пезеллино Пьетро</button>
+                                                        </li>
 
-                                                        <li><button class="js-custom-tab" data-path="twentyone"> Перуджино Перуцци,</button></li>
-                                                        <li><button class="js-custom-tab" data-path="twentytwo">Бальдассаре Пизанелло Пинтуриккьо </button></li>
+                                                        <li><button class="js-custom-tab" data-path="twentyone">
+                                                                Перуджино Перуцци,</button></li>
+                                                        <li><button class="js-custom-tab" data-path="twentytwo">Бальдассаре Пизанелло Пинтуриккьо
+                                                            </button></li>
 
                                                     </ul>
                                                 </div>
@@ -1567,7 +1701,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
 
                                             </li>
@@ -1579,11 +1714,12 @@
                                                 <div class="content ">
                                                     <div class="qestion-frame__content">
                                                         <button class="question-block-frame">
-                                                    <p class="qestion-frame"></p>
-                                                </button>
+                                                            <p class="qestion-frame"></p>
+                                                        </button>
                                                         <div class="qestion-frame-two">
                                                             <h4>Здесь пока пусто</h4>
-                                                            <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                                            <p>А в галерее вы всегда можете найти что-то интересное для себя
+                                                            </p>
                                                             <span>В галерею</span>
                                                         </div>
                                                     </div>
@@ -1599,7 +1735,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -1611,7 +1748,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -1623,7 +1761,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -1635,7 +1774,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -1646,7 +1786,7 @@
 
                         </div>
 
-                        <!--acc-4-->
+
 
                         <div id="tabs-5">
                             <p class="catalog__text">Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora
@@ -1660,7 +1800,8 @@
                                         <h3 class="catalog-title-two">Доменико Гирландайо</h3>
                                         <p class="catalog-text__two">2 июня 1448 — 11 января 1494. Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
                                             Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают
-                                            знатные граждане Флоренции в костюмах того времени).</p>
+                                            знатные граждане Флоренции в костюмах того времени).
+                                        </p>
                                     </div>
 
                                     <div class="js-custom-tab" data-target="two">
@@ -1689,7 +1830,8 @@
                                     <div class="js-custom-tab" data-target="five">
                                         <img class="js-custom-img" src="img/artist5.jpg" alt="Деятель">
                                         <h3 class="catalog-title-two">Бонсиньори, Франческо</h3>
-                                        <p class="catalog-text__two"> Франческо Бонсиньори — итальянский живописец, писавший картины в стиле Ренессанса. Википедия Дата и место рождения: 1460 г., Верона, Италия Дата и место смерти: 2 июля 1519 г., Кальдьеро, Италия</p>
+                                        <p class="catalog-text__two"> Франческо Бонсиньори — итальянский живописец, писавший картины в стиле Ренессанса. Википедия Дата и место рождения: 1460 г., Верона, Италия Дата и место смерти: 2 июля 1519 г., Кальдьеро, Италия
+                                        </p>
                                     </div>
 
 
@@ -1835,8 +1977,6 @@
                                         </p>
                                     </div>
                                 </div>
-
-
                                 <div class="part">
                                     <div class="accordion-item">
                                         <ul class="questions js-accordion">
@@ -1848,38 +1988,54 @@
 
                                                 <div class="content">
                                                     <ul class="catalog__acc-artists ">
-                                                        <li><button class="js-custom-tab" data-path="one">Бенедетто ди Биндо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="two">  Бергоньоне, Амброджо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="three">Биссоло, Франческо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="four">Больтраффио, Джованни</button></li>
-
-                                                        <li><button class="js-custom-tab" data-path="five">Бонсиньори, Франческо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="six"> Биссоло, Франческо</button></li>
-                                                        <li><button class="js-custom-tab" data-path="seven">Джованни Больтраффио </button></li>
-                                                        <li><button class="js-custom-tab" data-path="eight">Джованни Бонсиньори, </button></li>
-
-                                                        <li><button class="js-custom-tab" data-path="nine">Франческо Боттичини,</button></li>
-                                                        <li><button class="js-custom-tab" data-path="ten">  Рафаэлло Брамантино Бреа, </button></li>
-                                                        <li><button class="js-custom-tab" data-path="eleven">Людовико Бьяджо д’Антонио Туччи </button></li>
+                                                        <li><button class="js-custom-tab" data-path="one">Бенедетто ди
+                                                                Биндо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="two"> Бергоньоне,
+                                                                Амброджо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="three">Биссоло,
+                                                                Франческо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="four">Больтраффио,
+                                                                Джованни</button></li>
+                                                        <li><button class="js-custom-tab" data-path="five">Бонсиньори,
+                                                                Франческо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="six"> Биссоло,
+                                                                Франческо</button></li>
+                                                        <li><button class="js-custom-tab" data-path="seven">Джованни
+                                                                Больтраффио </button></li>
+                                                        <li><button class="js-custom-tab" data-path="eight">Джованни
+                                                                Бонсиньори, </button></li>
+                                                        <li><button class="js-custom-tab" data-path="nine">Франческо
+                                                                Боттичини,</button></li>
+                                                        <li><button class="js-custom-tab" data-path="ten"> Рафаэлло
+                                                                Брамантино Бреа, </button></li>
+                                                        <li><button class="js-custom-tab" data-path="eleven">Людовико
+                                                                Бьяджо д’Антонио Туччи
+                                                            </button></li>
                                                         <li><button class="js-custom-tab" data-path="twelve">Веккьетта</button></li>
-
-                                                        <li><button class="js-custom-tab" data-path="thirteen"> Андреа Верроккьо </button></li>
-                                                        <li><button class="js-custom-tab" data-path="fourteen"> Доменико Гирландайо </button></li>
-                                                        <li><button class="js-custom-tab" data-path="fifteeen">Беноццо Гоццоли Граначчи,</button></li>
-                                                        <li><button class="js-custom-tab" data-path="sixteen"> Франческо Грегорио ди Чекко</button></li>
-
-
-                                                        <li><button class="js-custom-tab" data-path="seventeen">  Джованни да Удине </button></li>
-                                                        <li><button class="js-custom-tab" data-path="eighteen">Джованни ди Паоло Джорджоне </button></li>
-
-
-
-                                                        <li><button class="js-custom-tab" data-path="nineteen"> Парентино,</button></li>
-                                                        <li><button class="js-custom-tab" data-path="twenty"> Бернардо Пезеллино Пьетро</button></li>
-
-                                                        <li><button class="js-custom-tab" data-path="twentyone"> Перуджино Перуцци,</button></li>
-                                                        <li><button class="js-custom-tab" data-path="twentytwo">Бальдассаре Пизанелло Пинтуриккьо </button></li>
-
+                                                        <li><button class="js-custom-tab" data-path="thirteen"> Андреа
+                                                                Верроккьо </button></li>
+                                                        <li><button class="js-custom-tab" data-path="fourteen"> Доменико
+                                                                Гирландайо </button></li>
+                                                        <li><button class="js-custom-tab" data-path="fifteeen">Беноццо
+                                                                Гоццоли Граначчи,</button>
+                                                        </li>
+                                                        <li><button class="js-custom-tab" data-path="sixteen"> Франческо
+                                                                Грегорио ди Чекко</button>
+                                                        </li>
+                                                        <li><button class="js-custom-tab" data-path="seventeen">
+                                                                Джованни да Удине </button></li>
+                                                        <li><button class="js-custom-tab" data-path="eighteen">Джованни
+                                                                ди Паоло Джорджоне </button>
+                                                        </li>
+                                                        <li><button class="js-custom-tab" data-path="nineteen">
+                                                                Парентино,</button></li>
+                                                        <li><button class="js-custom-tab" data-path="twenty"> Бернардо
+                                                                Пезеллино Пьетро</button>
+                                                        </li>
+                                                        <li><button class="js-custom-tab" data-path="twentyone">
+                                                                Перуджино Перуцци,</button></li>
+                                                        <li><button class="js-custom-tab" data-path="twentytwo">Бальдассаре Пизанелло Пинтуриккьо
+                                                            </button></li>
                                                     </ul>
                                                 </div>
                                             </li>
@@ -1891,7 +2047,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
 
                                             </li>
@@ -1903,11 +2060,12 @@
                                                 <div class="content ">
                                                     <div class="qestion-frame__content">
                                                         <button class="question-block-frame">
-                                                    <p class="qestion-frame"></p>
-                                                </button>
+                                                            <p class="qestion-frame"></p>
+                                                        </button>
                                                         <div class="qestion-frame-two">
                                                             <h4>Здесь пока пусто</h4>
-                                                            <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                                            <p>А в галерее вы всегда можете найти что-то интересное для себя
+                                                            </p>
                                                             <span>В галерею</span>
                                                         </div>
                                                     </div>
@@ -1923,7 +2081,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -1935,7 +2094,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -1947,7 +2107,8 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
 
@@ -1959,91 +2120,74 @@
                                                 <div class="content">
                                                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo
                                                         ipsam eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis
-                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                                        sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.
+                                                    </p>
                                                 </div>
                                             </li>
                                         </ul>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
 
         </section>
         <section class="events">
-            <div class="container events-container">
-
+            <div class="container">
                 <h2 class="events-title">События</h2>
-                <ul class="cards-wrap">
-                    <li class="card card-one">
-                        <div class="card-content">
+                <div class="swiper-container">
+                    <ul class="cards-wrap swiper-wrapper">
+                        <li class="card card-one">
                             <span class="card-gray">Музей им. Щусева</span>
                             <span class="card-aside">с 20 марта по 30 апреля</span>
                             <h3 class="card-title">Книжная гравюра в живом восприятии</h3>
                             <p class="card-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-                        </div>
-                        <a href="" class="card-link">Подробнее</a>
-                    </li>
+                            <a href="" class="card-link">Подробнее</a>
+                        </li>
 
-                    <li class="card card-two">
-                        <div class="card-content">
-                            <span class="card-gray">ММОМА
-                              </span>
+                        <li class="card card-two">
+                            <span class="card-gray">ММОМА</span>
                             <span class="card-aside">24 марта 19:00</span>
                             <h3 class="card-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
                             <p class="card-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
-                        </div>
-                        <a href="" class="card-link">Подробнее</a>
-                    </li>
+                            <a href="" class="card-link">Подробнее</a>
+                        </li>
 
-                    <li class="card card-three">
-                        <div class="card-content">
-                            <span class="card-gray">Еврейский музей
-                             </span>
+                        <li class="card card-three">
+                            <span class="card-gray">Еврейский музей</span>
                             <span class="card-aside"> с 31 марта по 21 апреля</span>
                             <h3 class="card-title">Выставка «Формация 2020»</h3>
                             <p class="card-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
-                        </div>
-                        <a href="" class="card-link">Подробнее</a>
-                    </li>
+                            <a href="" class="card-link">Подробнее</a>
+                        </li>
 
-                    <li class="card card-four">
-                        <div class="card-content">
-                            <span class="card-gray">Третьяковка на Крымском валу
-                           </span>
+                        <li class="card card-four">
+                            <span class="card-gray">Третьяковка на Крымском валу</span>
                             <span class="card-aside">с 30 марта по 30 апреля</span>
                             <h3 class="card-title">XXIV Международная биеннале молодого искусства</h3>
-                            <p class="card-text">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
-                        </div>
-                        <a href="" class="card-link">Подробнее</a>
-                    </li>
+                            <p class="card-text">Внезапно, реплицированные с зарубежных источников, современные исследования.
+                            </p>
+                            <a href="" class="card-link">Подробнее</a>
+                        </li>
 
-                    <li class="card card-five">
-                        <div class="card-content">
-                            <span class="card-gray">ММАМ
-                             </span>
+                        <li class="card card-five">
+                            <span class="card-gray">ММАМ</span>
                             <span class="card-aside"> с 8 апреля по 20 мая</span>
                             <h3 class="card-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
                             <p class="card-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-                        </div>
-                        <a href="" class="card-link">Подробнее</a>
-                    </li>
+                            <a href="" class="card-link">Подробнее</a>
+                        </li>
+                    </ul>
+                </div>
 
-                </ul>
                 <div class="events-button">
                     <button class="events-btn events-btn" type="button">Все события</button>
                 </div>
-
-
             </div>
-
-
         </section>
+
 
         <section class="edition">
             <div class="container edition-container">
@@ -2054,81 +2198,76 @@
                             Категории:
                         </h2>
                         <label for="check" class="checkbox_label">
-                        <input type="checkbox" name="check" id="check" class="check">
-
-                       <span class="check__text"> Бестселлеры </span>
-                       <span class="check__checkbox"></span>
-                      </label>
-
-                        <label class="checkbox_label">
-                        <input type="checkbox" name="check" class="check">
-
-                        <span class="check__text">Искусство</span>
-                        <span class="check__checkbox"></span>
-                      </label>
+                            <input type="checkbox" name="check" id="check" class="check">
+                            <span class="check__text"> Бестселлеры </span>
+                            <span class="check__checkbox"></span>
+                        </label>
 
                         <label class="checkbox_label">
-                        <input type="checkbox" name="check" class="check">
-
-
-                        <span class="check__text">   Архитектура</span>
-                        <span class="check__checkbox"></span>
-                      </label>
+                            <input type="checkbox" name="check" class="check">
+                            <span class="check__text">Искусство</span>
+                            <span class="check__checkbox"></span>
+                        </label>
 
                         <label class="checkbox_label">
-                        <input type="checkbox" name="check" class="check">
-                        <span class="check__text">Дизайн</span>
-                        <span class="check__checkbox"></span>
-                      </label>
+                            <input type="checkbox" name="check" class="check">
+                            <span class="check__text"> Архитектура</span>
+                            <span class="check__checkbox"></span>
+                        </label>
 
                         <label class="checkbox_label">
-                        <input type="checkbox" name="check" class="check">
-
-                        <span class="check__text">Мода</span>
-                        <span class="check__checkbox"></span>
-                      </label>
-
-                        <label class="checkbox_label">
-                        <input type="checkbox" name="check" class="check">
-                        <span class="check__text">Детям</span>
-                        <span class="check__checkbox"></span>
-                      </label>
+                            <input type="checkbox" name="check" class="check">
+                            <span class="check__text">Дизайн</span>
+                            <span class="check__checkbox"></span>
+                        </label>
 
                         <label class="checkbox_label">
-                        <input type="checkbox" name="check" class="check">
-                        <span class="check__text"> Художественная литература</span>
-                        <span class="check__checkbox"></span>
-                      </label>
+                            <input type="checkbox" name="check" class="check">
+                            <span class="check__text">Мода</span>
+                            <span class="check__checkbox"></span>
+                        </label>
 
                         <label class="checkbox_label">
-                        <input type="checkbox" name="check" class="check">
-                        <span class="check__text">Публицистика</span>
-                        <span class="check__checkbox"></span>
-                      </label>
+                            <input type="checkbox" name="check" class="check">
+                            <span class="check__text">Детям</span>
+                            <span class="check__checkbox"></span>
+                        </label>
 
                         <label class="checkbox_label">
-                        <input type="checkbox" name="check" class="check">
-                        <span class="check__text">  Путеводители</span>
-                        <span class="check__checkbox"></span>
-                      </label>
+                            <input type="checkbox" name="check" class="check">
+                            <span class="check__text"> Художественная литература</span>
+                            <span class="check__checkbox"></span>
+                        </label>
 
                         <label class="checkbox_label">
-                        <input type="checkbox" name="check" class="check">
-                        <span class="check__text"> Философия</span>
-                        <span class="check__checkbox"></span>
-                      </label>
+                            <input type="checkbox" name="check" class="check">
+                            <span class="check__text">Публицистика</span>
+                            <span class="check__checkbox"></span>
+                        </label>
 
                         <label class="checkbox_label">
-                        <input type="checkbox" name="check" class="check">
-                        <span class="check__text">Учебная литература</span>
-                        <span class="check__checkbox"></span>
-                      </label>
+                            <input type="checkbox" name="check" class="check">
+                            <span class="check__text"> Путеводители</span>
+                            <span class="check__checkbox"></span>
+                        </label>
 
                         <label class="checkbox_label">
-                        <input type="checkbox" name="check" class="check">
-                        <span class="check__text"> Журналы и газеты  </span>
-                        <span class="check__checkbox"></span>
-                      </label>
+                            <input type="checkbox" name="check" class="check">
+                            <span class="check__text"> Философия</span>
+                            <span class="check__checkbox"></span>
+                        </label>
+
+                        <label class="checkbox_label">
+                            <input type="checkbox" name="check" class="check">
+                            <span class="check__text">Учебная литература</span>
+                            <span class="check__checkbox"></span>
+                        </label>
+
+                        <label class="checkbox_label">
+                            <input type="checkbox" name="check" class="check">
+                            <span class="check__text"> Журналы и газеты </span>
+                            <span class="check__checkbox"></span>
+                        </label>
                         <div class="price">
                             <h4 class="price-title">Цена</h4>
                             <div class="price-content">
@@ -2140,13 +2279,7 @@
                                 <span class="price-text">руб.</span>
                             </div>
                         </div>
-
-
-
                     </div>
-
-
-
 
                     <div class="editon-second">
                         <div class="swiper-container slider2-container">
@@ -2154,7 +2287,8 @@
                                 <div class="swiper-slide swiper-slide__edition swiper_slide__edition-1">
                                     <div class="swiper-slide__content-two">
                                         <span class="swiper-slide__price">620 руб</span>
-                                        <h3 class="swiper-slide__title">Искусство цвета <span class="swiper-slide__subtitle"> Иттен, Иоханнес</span> </h3>
+                                        <h3 class="swiper-slide__title">Искусство цвета <span class="swiper-slide__subtitle"> Иттен,
+                                                Иоханнес</span> </h3>
                                         <button class="swiper-slide__button">Заказать</button>
                                     </div>
 
@@ -2164,7 +2298,8 @@
                                     <div class="swiper-slide__content-two">
                                         <span class="swiper-slide__price">2 450 руб</span>
                                         <h3 class="swiper-slide__title">Типографика
-                                            <span class="swiper-slide__subtitle">Рудер, Эмиль </span> </h3>
+                                            <span class="swiper-slide__subtitle">Рудер, Эмиль </span>
+                                        </h3>
                                         <button class="swiper-slide__button">Заказать</button>
                                     </div>
                                 </div>
@@ -2172,7 +2307,8 @@
                                     <div class="swiper-slide__content-two">
                                         <span class="swiper-slide__price">2 450 руб</span>
                                         <h3 class="swiper-slide__title">Типографика
-                                            <span class="swiper-slide__subtitle">Рудер, Эмиль </span> </h3>
+                                            <span class="swiper-slide__subtitle">Рудер, Эмиль </span>
+                                        </h3>
                                         <button class="swiper-slide__button">Заказать</button>
                                     </div>
                                 </div>
@@ -2181,7 +2317,8 @@
                                     <div class="swiper-slide__content-two">
                                         <span class="swiper-slide__price">2 450 руб</span>
                                         <h3 class="swiper-slide__title">Типографика
-                                            <span class="swiper-slide__subtitle">Рудер, Эмиль </span> </h3>
+                                            <span class="swiper-slide__subtitle">Рудер, Эмиль </span>
+                                        </h3>
                                         <button class="swiper-slide__button">Заказать</button>
                                     </div>
                                 </div>
@@ -2190,7 +2327,8 @@
                                     <div class="swiper-slide__content-two">
                                         <span class="swiper-slide__price">2 450 руб</span>
                                         <h3 class="swiper-slide__title">Типографика
-                                            <span class="swiper-slide__subtitle">Рудер, Эмиль </span> </h3>
+                                            <span class="swiper-slide__subtitle">Рудер, Эмиль </span>
+                                        </h3>
                                         <button class="swiper-slide__button">Заказать</button>
                                     </div>
                                 </div>
@@ -2198,7 +2336,8 @@
                                     <div class="swiper-slide__content-two">
                                         <span class="swiper-slide__price">2 450 руб</span>
                                         <h3 class="swiper-slide__title">Типографика
-                                            <span class="swiper-slide__subtitle">Рудер, Эмиль </span> </h3>
+                                            <span class="swiper-slide__subtitle">Рудер, Эмиль </span>
+                                        </h3>
                                         <button class="swiper-slide__button">Заказать</button>
                                     </div>
                                 </div>
@@ -2206,14 +2345,12 @@
                                     <div class="swiper-slide__content-two">
                                         <span class="swiper-slide__price">2 450 руб</span>
                                         <h3 class="swiper-slide__title">Типографика
-                                            <span class="swiper-slide__subtitle">Рудер, Эмиль </span> </h3>
+                                            <span class="swiper-slide__subtitle">Рудер, Эмиль </span>
+                                        </h3>
                                         <button class="swiper-slide__button">Заказать</button>
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </div>
                         <div class="edition-top__btn">
                             <div class="swiper-pagination-2 swiper-pagination-fraction-2"></div>
@@ -2234,49 +2371,74 @@
                     <p class="projects-text">
                         Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени
                         совершенной неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское <button class="projects-marker" id="myButton" tabindex="0">i</button>                        обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет сомнений, что действия представителей оппозиции могут быть рассмотрены <button class="projects-marker"
-                            id="myButton2">i</button> исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых <button class="projects-marker" id="myButton3">i</button> предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители
-                        современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной неузнаваемости. Подробнее: <a href="#" class="projects-link">blanchard-art.ru/projects/about</a>
+                            id="myButton2">i</button> исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых
+                        <button class="projects-marker" id="myButton3">i</button> предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою
+                        очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной неузнаваемости. Подробнее: <a href="#" class="projects-link">blanchard-art.ru/projects/about</a>
                     </p>
                 </div>
                 <div class="projects__content-two">
                     <h3 class="projects__title-two">
                         Партнёры проектов:
                     </h3>
-
                 </div>
 
                 <div class="swiper-container slider3">
                     <div class="swiper-wrapper project-wrapper">
-                        <div class="swiper-slide project-slide project-slide-one">
-
+                        <div class="swiper-slide project-slide">
+                            <a href="#" class="projects-slide__link">
+                                <img src="img/freelands-gray.png" class="projects-slide__image" alt="Freelans-logo">
+                            </a>
                         </div>
-                        <div class="swiper-slide project-slide project-slide-two"></div>
-                        <div class="swiper-slide project-slide project-slide-three"></div>
-
-                        <div class="swiper-slide project-slide project-slide-four"></div>
-                        <div class="swiper-slide project-slide project-slide-five"></div>
-                        <div class="swiper-slide project-slide project-slide-six"></div>
-
-                        <div class="swiper-slide project-slide project-slide-seven"></div>
-                        <div class="swiper-slide project-slide project-slide-eight"></div>
-                        <div class="swiper-slide project-slide project-slide-nine"></div>
+                        <div class="swiper-slide project-slide">
+                            <a href="#" class="projects-slide__link">
+                                <img src="img/art.png" class="projects-slide__image" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide project-slide">
+                            <a href="#" class="projects-slide__link">
+                                <img src="img/workhouse-gray.png" class="projects-slide__image" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide project-slide ">
+                            <a href="#" class="projects-slide__link">
+                                <img src="img/1849-color.png" class="projects-slide__image" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide project-slide ">
+                            <a href="#" class="projects-slide__link">
+                                <img src="img/hiscox-gray.png" class="projects-slide__image" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide project-slide">
+                            <a href="#" class="projects-slide__link">
+                                <img src="img/camden-gray.png" class="projects-slide__image" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide project-slide">
+                            <a href="#" class="projects-slide__link">
+                                <img src="img/stassen-gray.png" class="projects-slide__image" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide project-slide">
+                            <a href="" class="projects-slide__link">
+                                <img src="img/watss-gray.png" class="projects-slide__image" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide project-slide ">
+                            <a href="#" class="projects-slide__link">
+                                <img src="img/stassen-gray.png" class="projects-slide__image" alt="">
+                            </a>
+                        </div>
                     </div>
-
-
-
-
-
                 </div>
 
                 <div class="project-btn">
-
                     <div class="slider3-swiper-button-prev swiper-button-prev-one"></div>
                     <div class="slider3-swiper-button-next swipwr-button-next-two"></div>
                 </div>
             </div>
 
         </section>
-
 
         <section class="contacts">
             <div class="container">
@@ -2286,56 +2448,53 @@
                 <div class="container contacts__container">
                     <div class="contacts__contacts">
                         <h3 class="contacts__showroom">Шоурум №4</h3>
-                        <p class="contacts__text"> Леонтьевский переулок, дом 5/1</p>
+                        <p class="contacts__text">Леонтьевский переулок, дом 5/1</p>
 
                         <h4 class="contacts__order">Заказать обратный звонок</h4>
                         <form action="" class="form">
                             <input class="input" name="Имя" type="text" placeholder="Имя*" data-validate-field="name">
                             <input class="input" name="tel" type="tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone">
-
-
                             <button class="button">Заказать</button>
                         </form>
-
                         <span class="contacts__order">Связаться в один клик</span>
 
                         <ul class="contacts__block">
                             <li class="contacts__icon">
-                                <a href="#" class="icon one" aria-label="watsapp"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z" fill="#30BF39"/>
-                                  <path d="M25.8749 21.7509C25.6249 21.6259 24.3124 20.8759 24.0624 20.8134C23.8124 20.6884 23.6249 20.6884 23.4374 20.9384C23.2499 21.1884 22.6874 21.8134 22.5624 21.9384C22.3749 22.1259 22.2499 22.1259 21.9999 22.0009C21.7499 21.8759 20.8749 21.5634 19.8749 20.5634C19.1249 19.8134 18.5624 18.9384 18.4374 18.6259C18.3124 18.3759 18.4374 18.1884 18.5624 18.0634C18.6874 17.9384 18.8124 17.7509 18.9999 17.6259C19.1874 17.5009 19.1874 17.3759 19.3124 17.1884C19.4374 17.0009 19.3749 16.8759 19.3124 16.6884C19.2499 16.5009 18.7499 15.1884 18.5624 14.6259C18.3749 14.0634 18.1249 14.1884 17.9999 14.1259C17.8124 14.1259 17.6874 14.0634 17.4999 14.0634C17.2499 14.0634 16.9374 14.1884 16.7499 14.3759C16.4999 14.6259 15.7499 15.2509 15.7499 16.5634C15.7499 17.8759 16.6249 19.2509 16.7499 19.3759C16.8749 19.5634 18.4999 22.4384 21.1874 23.6259C23.8749 24.8134 23.8749 24.4384 24.3749 24.4384C24.8749 24.4384 25.9999 23.8134 26.2499 23.2509C26.4999 22.6259 26.4999 22.0634 26.4374 22.0009C26.3124 22.0009 26.1249 21.9384 25.8749 21.7509ZM20.8749 28.1884C19.1249 28.1884 17.4999 27.6884 16.0624 26.7509L12.6874 27.8134L13.8124 24.5634C12.7499 23.0634 12.1249 21.2509 12.1249 19.3759C12.1249 14.5009 16.0624 10.5634 20.9374 10.5634C25.8124 10.5634 29.6874 14.5009 29.6874 19.3759C29.6874 24.2509 25.7499 28.1884 20.8749 28.1884ZM20.8749 8.81335C15.0624 8.81335 10.3124 13.5634 10.3124 19.3759C10.3124 21.3134 10.8124 23.1884 11.8124 24.8134L9.87488 30.5009L15.7499 28.6259C17.3124 29.5009 19.0624 29.9384 20.8749 29.9384C26.6874 29.9384 31.4374 25.1884 31.4374 19.3759C31.4374 13.5634 26.7499 8.81335 20.8749 8.81335Z" fill="white"/>
-                                  </svg>
-
-                                  </a>
+                                <a href="#" class="icon one" aria-label="watsapp"><svg width="40" height="40"
+                                        viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M25.8749 21.7509C25.6249 21.6259 24.3124 20.8759 24.0624 20.8134C23.8124 20.6884 23.6249 20.6884 23.4374 20.9384C23.2499 21.1884 22.6874 21.8134 22.5624 21.9384C22.3749 22.1259 22.2499 22.1259 21.9999 22.0009C21.7499 21.8759 20.8749 21.5634 19.8749 20.5634C19.1249 19.8134 18.5624 18.9384 18.4374 18.6259C18.3124 18.3759 18.4374 18.1884 18.5624 18.0634C18.6874 17.9384 18.8124 17.7509 18.9999 17.6259C19.1874 17.5009 19.1874 17.3759 19.3124 17.1884C19.4374 17.0009 19.3749 16.8759 19.3124 16.6884C19.2499 16.5009 18.7499 15.1884 18.5624 14.6259C18.3749 14.0634 18.1249 14.1884 17.9999 14.1259C17.8124 14.1259 17.6874 14.0634 17.4999 14.0634C17.2499 14.0634 16.9374 14.1884 16.7499 14.3759C16.4999 14.6259 15.7499 15.2509 15.7499 16.5634C15.7499 17.8759 16.6249 19.2509 16.7499 19.3759C16.8749 19.5634 18.4999 22.4384 21.1874 23.6259C23.8749 24.8134 23.8749 24.4384 24.3749 24.4384C24.8749 24.4384 25.9999 23.8134 26.2499 23.2509C26.4999 22.6259 26.4999 22.0634 26.4374 22.0009C26.3124 22.0009 26.1249 21.9384 25.8749 21.7509ZM20.8749 28.1884C19.1249 28.1884 17.4999 27.6884 16.0624 26.7509L12.6874 27.8134L13.8124 24.5634C12.7499 23.0634 12.1249 21.2509 12.1249 19.3759C12.1249 14.5009 16.0624 10.5634 20.9374 10.5634C25.8124 10.5634 29.6874 14.5009 29.6874 19.3759C29.6874 24.2509 25.7499 28.1884 20.8749 28.1884ZM20.8749 8.81335C15.0624 8.81335 10.3124 13.5634 10.3124 19.3759C10.3124 21.3134 10.8124 23.1884 11.8124 24.8134L9.87488 30.5009L15.7499 28.6259C17.3124 29.5009 19.0624 29.9384 20.8749 29.9384C26.6874 29.9384 31.4374 25.1884 31.4374 19.3759C31.4374 13.5634 26.7499 8.81335 20.8749 8.81335Z"
+                                            fill="white" />
+                                    </svg></a>
                             </li>
                             <li class="contacts__icon">
                                 <a href="#" class="icon two">
                                     <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="url(#paint0_linear)"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05312 19.7889L20.7167 14.7649C26.271 12.4547 27.425 12.0534 28.1773 12.0402C28.3428 12.0373 28.7127 12.0783 28.9523 12.2727C29.1547 12.4369 29.2103 12.6587 29.237 12.8143C29.2636 12.9699 29.2968 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0045 27.9806C26.7241 29.4794 26.1725 29.9819 25.6377 30.0311C24.4762 30.138 23.5943 29.2635 22.4694 28.5261L18.006 25.528C16.0314 24.2268 17.3114 23.5116 18.4368 22.3428C18.7313 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9715 16.7104 23.8546 16.6064C23.7376 16.5024 23.565 16.5384 23.4404 16.5663C23.2639 16.6064 20.4519 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8354 22.9435C12.1213 22.9281 10.7477 22.5397 9.72652 22.2078C8.474 21.8007 7.47852 21.5854 7.56524 20.8939C7.61036 20.5338 8.10632 20.1655 9.05308 19.789L9.05312 19.7889Z" fill="white"/>
-                                    <defs>
-                                    <lineargradient id="paint0_linear" x1="20" y1="0" x2="20" y2="39.7033" gradientunits="userSpaceOnUse">
-                                    <stop stop-color="#2AABEE"/>
-                                    <stop offset="1" stop-color="#229ED9"/>
-                                    </lineargradient>
-                                    </defs>
+                                        <path
+                                            d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
+                                            fill="currentColor" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.05312 19.7889L20.7167 14.7649C26.271 12.4547 27.425 12.0534 28.1773 12.0402C28.3428 12.0373 28.7127 12.0783 28.9523 12.2727C29.1547 12.4369 29.2103 12.6587 29.237 12.8143C29.2636 12.9699 29.2968 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0045 27.9806C26.7241 29.4794 26.1725 29.9819 25.6377 30.0311C24.4762 30.138 23.5943 29.2635 22.4694 28.5261L18.006 25.528C16.0314 24.2268 17.3114 23.5116 18.4368 22.3428C18.7313 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9715 16.7104 23.8546 16.6064C23.7376 16.5024 23.565 16.5384 23.4404 16.5663C23.2639 16.6064 20.4519 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8354 22.9435C12.1213 22.9281 10.7477 22.5397 9.72652 22.2078C8.474 21.8007 7.47852 21.5854 7.56524 20.8939C7.61036 20.5338 8.10632 20.1655 9.05308 19.789L9.05312 19.7889Z"
+                                            fill="white" />
+                                        <defs>
+                                            <lineargradient id="paint0_linear" x1="20" y1="0" x2="20" y2="39.7033"
+                                                gradientunits="userSpaceOnUse">
+                                                <stop stop-color="#2AABEE" />
+                                                <stop offset="1" stop-color="#229ED9" />
+                                            </lineargradient>
+                                        </defs>
                                     </svg>
-
                                 </a>
                             </li>
-
                         </ul>
-
-
                     </div>
-                    <div class="contacts__map" id="map">
-
-                    </div>
+                    <div class="contacts__map" id="map"></div>
                 </div>
             </div>
         </section>
-
-
     </main>
     <footer class="footer">
         <div class="container footer__container">
@@ -2348,49 +2507,48 @@
                 <li class="footer__icon">
                     <a href="#" class="icon icon-vk" aria-label="instagram">
                         <svg width="45" height="45" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z" fill="#CACACA"/>
+                            <path
+                                d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z"
+                                fill="#CACACA" />
                         </svg>
-
                     </a>
                 </li>
                 <li class="footer__icon">
                     <a href="#" class="icon icon-inst">
                         <svg width="45" height="45" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.1172 22.5C18.1172 24.8785 20.0453 26.8066 22.4238 26.8066C24.8024 26.8066 26.7305 24.8785 26.7305 22.5C26.7305 20.1215 24.8024 18.1934 22.4238 18.1934C20.0453 18.1934 18.1172 20.1215 18.1172 22.5Z" fill="#CACACA"/>
-                        <path d="M12.3521 14.8803C12.5591 14.3194 12.8894 13.8116 13.3185 13.3948C13.7353 12.9656 14.2428 12.6354 14.8041 12.4283C15.2593 12.2515 15.9432 12.0411 17.2029 11.9837C18.5655 11.9216 18.9741 11.9082 22.4238 11.9082C25.8738 11.9082 26.2824 11.9212 27.6447 11.9834C28.9044 12.0411 29.5886 12.2515 30.0435 12.4283C30.6048 12.6354 31.1126 12.9656 31.5291 13.3948C31.9582 13.8116 32.2885 14.319 32.4959 14.8803C32.6727 15.3356 32.8831 16.0198 32.9405 17.2795C33.0026 18.6418 33.016 19.0503 33.016 22.5004C33.016 25.9501 33.0026 26.3587 32.9405 27.7213C32.8831 28.981 32.6727 29.6649 32.4959 30.1201C32.2885 30.6814 31.9586 31.1889 31.5294 31.6057C31.1126 32.0348 30.6052 32.3651 30.0438 32.5721C29.5886 32.7493 28.9044 32.9597 27.6447 33.0171C26.2824 33.0792 25.8742 33.0922 22.4241 33.0922C18.9737 33.0922 18.5652 33.0792 17.2032 33.0171C15.9436 32.9597 15.2593 32.7493 14.8041 32.5721C13.6773 32.1375 12.7867 31.2469 12.3521 30.1201C12.1753 29.6649 11.9648 28.981 11.9071 27.7213C11.845 26.3587 11.8319 25.9501 11.8319 22.5004C11.8319 19.0503 11.845 18.6418 11.9071 17.2795C11.9645 16.0198 12.1749 15.3356 12.3521 14.8803ZM22.4238 29.1344C26.0881 29.1344 29.0585 26.1643 29.0585 22.5001C29.0585 18.8358 26.0881 15.8657 22.4238 15.8657C18.7599 15.8657 15.7894 18.8358 15.7894 22.5001C15.7894 26.1643 18.7599 29.1344 22.4238 29.1344ZM15.5271 17.1538C16.3834 17.1538 17.0776 16.4596 17.0776 15.6034C17.0776 14.7471 16.3834 14.0529 15.5271 14.0529C14.6709 14.0529 13.9767 14.7471 13.9767 15.6034C13.977 16.4596 14.6709 17.1538 15.5271 17.1538Z" fill="#CACACA"/>
-                        <path d="M22.6204 0C34.9364 0 44.9238 9.98747 44.9238 22.3034C44.9238 34.6194 34.9364 44.6069 22.6204 44.6069C10.3044 44.6069 0.316959 34.6194 0.316959 22.3034C0.316959 9.98747 10.3044 0 22.6204 0ZM9.89059 27.5836C9.95253 28.9469 10.1693 29.8777 10.4858 30.6924C11.1512 32.4127 12.5111 33.7727 14.2314 34.438C15.0458 34.7545 15.9769 34.971 17.3399 35.0332C18.7057 35.0955 19.1419 35.1105 22.6201 35.1105C26.0985 35.1105 26.5345 35.0955 27.9005 35.0332C29.2635 34.971 30.1946 34.7545 31.009 34.438C31.8639 34.1164 32.6378 33.6124 33.2776 32.9607C33.929 32.3212 34.433 31.547 34.7546 30.6924C35.0711 29.878 35.2879 28.9469 35.3498 27.5839C35.4128 26.2178 35.4274 25.7815 35.4274 22.3034C35.4274 18.8253 35.4128 18.389 35.3502 17.0233C35.2883 15.66 35.0718 14.7292 34.7553 13.9145C34.4337 13.0599 33.9293 12.2857 33.2776 11.6462C32.6382 10.9945 31.8639 10.4905 31.0094 10.1689C30.1946 9.85236 29.2638 9.63592 27.9005 9.57364C26.5348 9.51136 26.0985 9.49638 22.6204 9.49638C19.1423 9.49638 18.706 9.51136 17.3403 9.57398C15.9769 9.63592 15.0462 9.85236 14.2314 10.1685C13.3769 10.4901 12.6026 10.9945 11.9628 11.6462C11.3114 12.286 10.8071 13.0599 10.4858 13.9145C10.169 14.7292 9.95253 15.66 9.89025 17.0233C9.82798 18.389 9.81334 18.8253 9.81334 22.3034C9.81334 25.7815 9.82798 26.2178 9.89059 27.5836Z" fill="#CACACA"/>
+                            <path
+                                d="M18.1172 22.5C18.1172 24.8785 20.0453 26.8066 22.4238 26.8066C24.8024 26.8066 26.7305 24.8785 26.7305 22.5C26.7305 20.1215 24.8024 18.1934 22.4238 18.1934C20.0453 18.1934 18.1172 20.1215 18.1172 22.5Z"
+                                fill="#CACACA" />
+                            <path
+                                d="M12.3521 14.8803C12.5591 14.3194 12.8894 13.8116 13.3185 13.3948C13.7353 12.9656 14.2428 12.6354 14.8041 12.4283C15.2593 12.2515 15.9432 12.0411 17.2029 11.9837C18.5655 11.9216 18.9741 11.9082 22.4238 11.9082C25.8738 11.9082 26.2824 11.9212 27.6447 11.9834C28.9044 12.0411 29.5886 12.2515 30.0435 12.4283C30.6048 12.6354 31.1126 12.9656 31.5291 13.3948C31.9582 13.8116 32.2885 14.319 32.4959 14.8803C32.6727 15.3356 32.8831 16.0198 32.9405 17.2795C33.0026 18.6418 33.016 19.0503 33.016 22.5004C33.016 25.9501 33.0026 26.3587 32.9405 27.7213C32.8831 28.981 32.6727 29.6649 32.4959 30.1201C32.2885 30.6814 31.9586 31.1889 31.5294 31.6057C31.1126 32.0348 30.6052 32.3651 30.0438 32.5721C29.5886 32.7493 28.9044 32.9597 27.6447 33.0171C26.2824 33.0792 25.8742 33.0922 22.4241 33.0922C18.9737 33.0922 18.5652 33.0792 17.2032 33.0171C15.9436 32.9597 15.2593 32.7493 14.8041 32.5721C13.6773 32.1375 12.7867 31.2469 12.3521 30.1201C12.1753 29.6649 11.9648 28.981 11.9071 27.7213C11.845 26.3587 11.8319 25.9501 11.8319 22.5004C11.8319 19.0503 11.845 18.6418 11.9071 17.2795C11.9645 16.0198 12.1749 15.3356 12.3521 14.8803ZM22.4238 29.1344C26.0881 29.1344 29.0585 26.1643 29.0585 22.5001C29.0585 18.8358 26.0881 15.8657 22.4238 15.8657C18.7599 15.8657 15.7894 18.8358 15.7894 22.5001C15.7894 26.1643 18.7599 29.1344 22.4238 29.1344ZM15.5271 17.1538C16.3834 17.1538 17.0776 16.4596 17.0776 15.6034C17.0776 14.7471 16.3834 14.0529 15.5271 14.0529C14.6709 14.0529 13.9767 14.7471 13.9767 15.6034C13.977 16.4596 14.6709 17.1538 15.5271 17.1538Z"
+                                fill="#CACACA" />
+                            <path
+                                d="M22.6204 0C34.9364 0 44.9238 9.98747 44.9238 22.3034C44.9238 34.6194 34.9364 44.6069 22.6204 44.6069C10.3044 44.6069 0.316959 34.6194 0.316959 22.3034C0.316959 9.98747 10.3044 0 22.6204 0ZM9.89059 27.5836C9.95253 28.9469 10.1693 29.8777 10.4858 30.6924C11.1512 32.4127 12.5111 33.7727 14.2314 34.438C15.0458 34.7545 15.9769 34.971 17.3399 35.0332C18.7057 35.0955 19.1419 35.1105 22.6201 35.1105C26.0985 35.1105 26.5345 35.0955 27.9005 35.0332C29.2635 34.971 30.1946 34.7545 31.009 34.438C31.8639 34.1164 32.6378 33.6124 33.2776 32.9607C33.929 32.3212 34.433 31.547 34.7546 30.6924C35.0711 29.878 35.2879 28.9469 35.3498 27.5839C35.4128 26.2178 35.4274 25.7815 35.4274 22.3034C35.4274 18.8253 35.4128 18.389 35.3502 17.0233C35.2883 15.66 35.0718 14.7292 34.7553 13.9145C34.4337 13.0599 33.9293 12.2857 33.2776 11.6462C32.6382 10.9945 31.8639 10.4905 31.0094 10.1689C30.1946 9.85236 29.2638 9.63592 27.9005 9.57364C26.5348 9.51136 26.0985 9.49638 22.6204 9.49638C19.1423 9.49638 18.706 9.51136 17.3403 9.57398C15.9769 9.63592 15.0462 9.85236 14.2314 10.1685C13.3769 10.4901 12.6026 10.9945 11.9628 11.6462C11.3114 12.286 10.8071 13.0599 10.4858 13.9145C10.169 14.7292 9.95253 15.66 9.89025 17.0233C9.82798 18.389 9.81334 18.8253 9.81334 22.3034C9.81334 25.7815 9.82798 26.2178 9.89059 27.5836Z"
+                                fill="#CACACA" />
                         </svg>
-
                     </a>
                 </li>
                 <li class="footer__icon">
                     <a href="#" class="icon icon-fb">
                         <svg width="45" height="45" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.5 0C10.125 0 0 10.1431 0 22.6355C0 33.9307 8.23499 43.3057 18.99 45V29.1867H13.275V22.6355H18.99V17.6431C18.99 11.9729 22.3425 8.85542 27.495 8.85542C29.9475 8.85542 32.5125 9.28464 32.5125 9.28464V14.8645H29.6775C26.8875 14.8645 26.01 16.6039 26.01 18.3886V22.6355H32.265L31.2525 29.1867H26.01V45C31.312 44.1593 36.1399 41.4432 39.6223 37.342C43.1047 33.2408 45.012 28.0248 44.9999 22.6355C44.9999 10.1431 34.875 0 22.5 0Z" fill="#CACACA"/>
+                            <path
+                                d="M22.5 0C10.125 0 0 10.1431 0 22.6355C0 33.9307 8.23499 43.3057 18.99 45V29.1867H13.275V22.6355H18.99V17.6431C18.99 11.9729 22.3425 8.85542 27.495 8.85542C29.9475 8.85542 32.5125 9.28464 32.5125 9.28464V14.8645H29.6775C26.8875 14.8645 26.01 16.6039 26.01 18.3886V22.6355H32.265L31.2525 29.1867H26.01V45C31.312 44.1593 36.1399 41.4432 39.6223 37.342C43.1047 33.2408 45.012 28.0248 44.9999 22.6355C44.9999 10.1431 34.875 0 22.5 0Z"
+                                fill="#CACACA" />
                         </svg>
                     </a>
                 </li>
             </ul>
         </div>
 
-
     </footer>
-
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
-
-
-
-
-
     <script src="js/inputmask.min.js"></script>
     <script src="js/just-validate.min.js"></script>
     <script src="js/choices.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script src="js/main.js"></script>
 </body>
 

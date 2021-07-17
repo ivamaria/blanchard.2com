@@ -71,14 +71,25 @@
             transition: border .4s ease-in-out;
         }
 
-        .catalog__tab:focus,
         .catalog__tab:hover {
-            filter: drop-shadow(0 1px 10px rgba(157 92 208))
+            filter: drop-shadow(0 1px 10px rgba(157 92 208));
         }
 
-        .catalog__tab:active {
+        .catalog__tab:after {
+            content: "";
+            position: absolute;
+            left: -8px;
+            top: -8px;
             border: 2px solid var(--font-color);
+            border-radius: 100px;
+            width: calc(100% + 16px);
+            height: calc(100% + 16px);
+            opacity: 0;
+        }
+
+        .catalog__tab:focus::after {
             filter: none;
+            opacity: 1;
         }
 
         .js-tabs-img1 {
@@ -182,7 +193,12 @@
         }
 
         .part {
-            width: 50%;
+            width: 47%;
+            margin-right: 50px;
+        }
+
+        .part-2 {
+            width: 47%;
         }
         /*accordion*/
 

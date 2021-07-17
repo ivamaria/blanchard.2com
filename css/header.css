@@ -10,12 +10,12 @@
     display: flex;
     min-height: 100px;
     align-items: center;
+    padding-left: 24px;
     position: relative;
 }
 
 .nav-menu {
     max-width: 70%;
-    padding-right: 115px;
 }
 
 .header__burger {
@@ -27,7 +27,7 @@
 }
 
 .header__logo {
-    margin-right: auto;
+    margin-right: 163px;
     width: 200px;
     height: 40px;
     background-size: contain;
@@ -64,7 +64,7 @@
 }
 
 .nav-list__item:not(:last-child) {
-    margin-right: 62px;
+    margin-right: 61px;
 }
 
 .search-form__icon {
@@ -108,7 +108,7 @@
 }
 
 .first-login {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0em;
@@ -147,11 +147,11 @@
 .main-second__container {
     display: flex;
     align-items: center;
+    padding-left: 36px;
 }
 
 .main-nav {
     max-width: 80%;
-    padding-left: 13px;
     min-height: 70px;
 }
 
@@ -169,12 +169,25 @@
 }
 
 .main-list__heading {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.5px;
     font-weight: 400;
     line-height: 25px;
     text-align: center;
     letter-spacing: 1.5px;
+}
+
+.main-list__heading::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(136deg);
+    position: relative;
+    top: -1px;
+    left: 8px;
 }
 
 .main-list__heading:focus-visible {
@@ -195,24 +208,27 @@
     transition: color 0.2s ease-in-out;
     cursor: pointer;
     position: relative;
-}
-
-.main-list__btn:focus-visible {
-    background-color: var(--hover-active);
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
 .main-list__btn:not(:last-child) {
-    margin-right: 93px;
+    margin-right: 105px;
 }
 
-.main-list__icon {
-    position: relative;
+.main-list__btn:focus-visible .main-list__heading {
+    background-color: var(--hover-active);
 }
 
 .main-list__drodown-link {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+}
+
+.main-list__drodown-link>* {
+    position: relative;
+    z-index: 1;
 }
 
 .main-list__drodown-link1 {
@@ -318,30 +334,18 @@
     background-color: #9D5CD0;
 }
 
-.main-list__heading:active {
-    color: #9D5CD0;
-}
-
-.main-list__icon {
-    content: '';
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    transform: rotate(136deg);
-    position: relative;
-    top: -1px;
-    left: 8px;
-}
-
-.main-list__btn.is-active .main-list__icon {
+.main-list__btn.is-active .main-list__heading::after {
     border-top: 2px solid #7943A4;
     border-right: 2px solid #7943A4;
     transform: rotate(315deg);
 }
 
-.main-list__icon:active {
+.main-list__btn:hover .main-list__heading::after {
+    border-top: 2px solid #7943A4;
+    border-right: 2px solid #7943A4;
+}
+
+.main-list__heading::after:active {
     color: #7943A4;
     background-image: url("data:image/svg+xml,%3Csvg width='11' height='12' viewBox='0 0 11 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 11L10 6L5 0.999998' stroke='%237943A4'/%3E%3C/svg%3E");
     width: 8px;
@@ -388,11 +392,11 @@
 }
 
 .main-list__drodown-link:hover {
-    border: 1px solid var(--focus);
+    border-color: var(--focus);
 }
 
-.main-list__drodown-link:active {
-    background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+.main-list__drodown-link:active::after {
+    background-color: rgba(156, 106, 194, 0.4);
 }
 
 .main-list__drodown-item:not(:last-child) {
@@ -409,6 +413,7 @@
     padding-left: 10px;
     font-size: 14px;
     font-weight: 600;
+    border: 2px solid transparent;
     line-height: 19px;
     transition-property: background-color;
     transition-duration: .3s;
@@ -423,11 +428,11 @@
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0;
 }
 
-.main-list__drodown-link:hover:after {
+.main-list__drodown-link:hover {
     opacity: 1;
+    border-color: #9D5CD0;
 }
 
 @keyframes dropdownOpen {
@@ -495,23 +500,14 @@
 }
 
 @media only screen and (max-width:1510px) {
-    .nav-list__link {
-        font-size: 16px;
-    }
     .nav-list__item:not(:last-child) {
         margin-right: 30px;
     }
 }
 
 @media only screen and (max-width:1250px) {
-    .nav-list__link {
-        font-size: 15px;
-    }
     .nav-list__item:not(:last-child) {
         margin-right: 20px;
-    }
-    .first-login {
-        font-size: 15px;
     }
     .header__logo {
         width: 191px;
@@ -520,14 +516,8 @@
 }
 
 @media only screen and (max-width:1154px) {
-    .nav-list__link {
-        font-size: 13px;
-    }
     .nav-list__item:not(:last-child) {
         margin-right: 10px;
-    }
-    .first-login {
-        font-size: 13px;
     }
 }
 

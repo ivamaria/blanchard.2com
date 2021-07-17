@@ -41,84 +41,52 @@ function setMenuListener() {
 
 setMenuListener();
 
+//gallery
 
-var swiper = new Swiper(".image-slider", {
-
-
-    slidesPerView: 3,
-    slidesPerColumn: 2,
-    spaceBetween: 50,
-
-
+let gallerySlider = new Swiper(".gallery-swiper", {
+    slidesPerColumnFill: "row",
+    slidesPerView: 1,
+    slidesPerColumn: 1,
+    spaceBetween: 20,
     pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-        clickable: true,
-
-
-
+        el: ".gallery .gallery-pagination",
+        type: "fraction"
     },
-
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".gallery-next",
+        prevEl: ".gallery-prev"
     },
-
 
     breakpoints: {
-
-        320: {
-
-            slidesPerView: 1,
-            slidesPerColumn: 1,
-            spaceBetween: 0,
-        },
-
-        500: {
-
-            slidesPerView: 1,
-            slidesPerColumn: 1,
-            spaceBetween: 0,
-        },
-
-        541: {
-
-            slidesPerView: 1,
-            slidesPerColumn: 1,
-            spaceBetween: 0,
-            slidesPerColumnFill: 'row',
-        },
-
-        768: {
-
+        581: {
             slidesPerView: 2,
             slidesPerColumn: 2,
-            spaceBetween: 20,
+            spaceBetween: 30
         },
 
-        1024: {
-
-            slidesPerView: 2,
-            slidesPerColumn: 2,
-            spaceBetween: 20,
-        },
-
-        1300: {
-
+        1200: {
             slidesPerView: 3,
             slidesPerColumn: 2,
-            spaceBetween: 20,
-        },
-
-
+            spaceBetween: 50
+        }
     },
 
-    mobileFirst: false,
-    appendArrows: $('.content')
+    a11y: false,
+
+    on: {
+        /* исправляет баг с margin-top остающимся при смене брейкпоинта */
+        beforeResize: function() {
+            this.slides.forEach((el) => {
+                el.style.marginTop = "";
+            });
+        }
+    }
 });
 
 
 
+
+//
 
 document.addEventListener('DOMContentLoaded', function() {
     $(".js-tabs").tabs({
@@ -180,8 +148,47 @@ $(function() {
         heightStyle: 'content'
     });
 });
-//events-slider
+
 "use strict";
+//events-slider
+
+let eventsSlider = new Swiper(".events-container", {
+    slidesPerColumnFill: "row",
+    slidesPerView: 1,
+    slidesPerColumn: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        type: "bullets"
+    },
+
+
+    breakpoints: {
+        581: {
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            spaceBetween: 30
+        },
+
+        1200: {
+            slidesPerView: 3,
+            slidesPerColumn: 2,
+            spaceBetween: 50
+        }
+    },
+
+    a11y: false,
+
+    on: {
+        /* исправляет баг с margin-top остающимся при смене брейкпоинта */
+        beforeResize: function() {
+            this.slides.forEach((el) => {
+                el.style.marginTop = "";
+            });
+        }
+    }
+});
+
 
 document.addEventListener("DOMContentLoaded", function() {
     /* Можно начинать копировать отсюда */
@@ -199,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const closeAnimation = "fade-out";
             let isOpened = false;
             const showText = "Все события"; // текст кнопки в закрытом состоянии
-            const hideText = "Скрыть Все события"; // текст кнопки в открытом состоянии
+            const hideText = "Скрыть события"; // текст кнопки в открытом состоянии
             const btn = document.querySelector(".events-btn");
             const cards = Array.from(document.querySelectorAll(".card"));
 
@@ -373,6 +380,27 @@ var slider2 = new Swiper('.slider2-container', {
     mobileFirst: false,
     appendArrows: $('.content')
 });
+
+
+//events//
+
+var eventsswipercontainer = new Swiper('events-swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+
+
 
 
 

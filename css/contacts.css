@@ -119,14 +119,23 @@
         width: 60px;
         height: 60px;
         position: relative;
+        transition: color 0.3s ease;
     }
 
-    .one:hover svg path {
-        fill: #98f19e;
+    .icon.one {
+        color: #30BF39;
     }
 
-    .two:hover svg path {
-        fill: #86afe6;
+    .icon.one:hover {
+        color: #98f19e;
+    }
+
+    .icon.two {
+        color: #23a0db;
+    }
+
+    .icon.two:hover {
+        color: #7cb6e7;
     }
 
     .contacts__map {
