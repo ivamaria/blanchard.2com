@@ -6,15 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.png">
-
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-
-
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-
   <link rel="preload" href="fonts/Open-Sans-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Open-Sans-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Open-Sans-Semibold.woff2" as="font" type="font/woff2" crossorigin>
@@ -45,13 +39,13 @@
               <a href="#catalog" class="nav-list__link">Каталог</a>
             </li>
             <li class="nav-list__item">
-              <a href="#event" class="nav-list__link">События</a>
+              <a href="#cards" class="nav-list__link">События</a>
             </li>
             <li class="nav-list__item">
-              <a href="#publish" class="nav-list__link">Издания</a>
+              <a href="#edition" class="nav-list__link">Издания</a>
             </li>
             <li class="nav-list__item">
-              <a href="#proyect" class="nav-list__link">Проекты</a>
+              <a href="#projects" class="nav-list__link">Проекты</a>
             </li>
             <li class="nav-list__item">
               <a href="#contacts" class="nav-list__link">Контакты</a>
@@ -73,32 +67,20 @@
               d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
               fill="white" />
           </svg> Войти</a>
-        <form id="content" class="content" action="/">
-          <button class="header__bottom-button1" type="submit">
-            <svg width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="6.8678" height="1.71695"
-                transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor" />
+        <div class="top-search">
+          <input class="search-top__input" type="text" placeholder="Поиск по сайту"><button class="search-top__btn">
+            <svg width="27" height="27" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                d="M16.0002 8C16.0002 11.3137 13.3139 14 10.0002 14C6.68648 14 4.00019 11.3137 4.00019 8C4.00019 4.68629 6.68648 2 10.0002 2C13.3139 2 16.0002 4.68629 16.0002 8ZM18.0002 8C18.0002 12.4183 14.4185 16 10.0002 16C8.15297 16 6.45197 15.3739 5.09782 14.3224L1.41617 18.0041L0.00195312 16.5898L3.68288 12.9089C2.62828 11.5537 2.00019 9.8502 2.00019 8C2.00019 3.58172 5.58191 0 10.0002 0C14.4185 0 18.0002 3.58172 18.0002 8Z"
                 fill="currentColor" />
             </svg>
           </button>
-
-          <input id="search" class="header__bottom-search-top" type="search" placeholder="Поиск по сайту" aria-label="">
-        </form>
-
-
-
-
+        </div>
       </div>
-
-
     </div>
 
     <div class="main-second">
       <div class="container main-second__container">
-
-
         <nav class="main-nav">
           <ul class="main-list">
             <li class="main-list__item">
@@ -133,7 +115,7 @@
               </button>
               <ul class="main-list__dropdown" data-simplebar data-target="two">
                 <li class="main-list__drodown-item"><a href="#"
-                    class="main-list__drodown-link     main-list__drodown-link6"><span>Тинторрето</span></a>
+                    class="main-list__drodown-link main-list__drodown-link6"><span>Тинторрето</span></a>
                 </li>
                 <li class="main-list__drodown-item"><a href="#"
                     class="main-list__drodown-link main-list__drodown-link7"><span>Фридрих</span></a>
@@ -245,6 +227,7 @@
         </form>
       </div>
     </div>
+
   </header>
 
   <main>
@@ -265,7 +248,7 @@
       </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about">
       <div class="container about-us__container">
         <h2 class="about-us__title">
           О нас
@@ -286,7 +269,7 @@
       </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="container gallery-container">
         <div class="content-wrap">
           <div class="gallery-left">
@@ -401,7 +384,7 @@
       </div>
     </section>
 
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <div class="container catalog__container">
         <div class="catalog__wrapper">
           <div class="js-tabs">
@@ -2638,7 +2621,7 @@
       </div>
 
     </section>
-    <section class="cards">
+    <section class="cards" id="cards">
       <div class="container cards-container">
         <h2 class="cards-title">События</h2>
         <div class="cards-container js-cards-wrap">
@@ -2690,88 +2673,86 @@
       </div>
     </section>
 
-    <section class="edition">
+    <section class="edition" id="edition">
       <div class="container edition__container">
         <div class="edition-wrap">
           <div class="edition-left">
             <h2 class="edition__title">Издания</h2>
             <nav class="edition-nav">
-              <h3 class="edition__h3 .h3-toggler">Категории</h3>
+              <button class="edition__btn">Категории</button>
 
-              <ul class="edition__list_label">
-                <li class="edition__item_label">
-                  <label class="edition__label" for="check1">
-                    <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check1">
-                    <span class="edition__span">Бестселлеры</span>
-                  </label>
-                </li>
-                <li class="edition__item_label">
-                  <label class="edition__label" for="check2">
-                    <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check2">
-                    <span class="edition__span">Искусство</span>
-                  </label>
-                </li>
-                <li class="edition__item_label">
-                  <label class="edition__label" for="check3">
-                    <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check3">
-                    <span class="edition__span">Архитектура</span>
-                  </label>
-                </li>
-                <li class="edition__item_label">
-                  <label class="edition__label" for="check4">
-                    <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check4">
-                    <span class="edition__span">Дизайн</span>
-                  </label>
-                </li>
-                <li class="edition__item_label">
-                  <label class="edition__label" for="check5">
-                    <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check5">
-                    <span class="edition__span">Мода</span>
-                  </label>
-                </li>
-                <li class="edition__item_label">
-                  <label class="edition__label" for="check6">
-                    <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check6">
-                    <span class="edition__span">Детям</span>
-                  </label>
-                </li>
-                <li class="edition__item_label">
-                  <label class="edition__label" for="check7">
-                    <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check7">
-                    <span class="edition__span">Художественная литература</span>
-                  </label>
-                </li>
-                <li class="edition__item_label">
-                  <label class="edition__label" for="check8">
-                    <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check8">
-                    <span class="edition__span">Публицистика</span>
-                  </label>
-                </li>
-                <li class="edition__item_label">
-                  <label class="edition__label" for="check9">
-                    <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check9">
-                    <span class="edition__span">Путеводители</span>
-                  </label>
-                </li>
-                <li class="edition__item_label">
-                  <label class="edition__label" for="check10">
-                    <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check10">
-                    <span class="edition__span">Философия</span>
-                  </label>
-                </li>
-                <li class="edition__item_label">
-                  <label class="edition__label" for="check11">
-                    <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check11">
-                    <span class="edition__span">Учебная литература</span>
-                  </label>
-                </li>
-                <li class="edition__item_label">
-                  <label class="edition__label" for="check12">
-                    <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check12">
-                    <span class="edition__span">Журналы и газеты</span>
-                  </label>
-                </li>
-              </ul>
+              <label class="edition__label" for="check1">
+                <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check1">
+                <span class="edition__span">Бестселлеры</span>
+              </label>
+
+
+              <label class="edition__label" for="check2">
+                <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check2">
+                <span class="edition__span">Искусство</span>
+              </label>
+
+
+              <label class="edition__label" for="check3">
+                <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check3">
+                <span class="edition__span">Архитектура</span>
+              </label>
+
+
+              <label class="edition__label" for="check4">
+                <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check4">
+                <span class="edition__span">Дизайн</span>
+              </label>
+
+
+              <label class="edition__label" for="check5">
+                <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check5">
+                <span class="edition__span">Мода</span>
+              </label>
+
+
+              <label class="edition__label" for="check6">
+                <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check6">
+                <span class="edition__span">Детям</span>
+              </label>
+
+
+              <label class="edition__label" for="check7">
+                <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check7">
+                <span class="edition__span">Художественная литература</span>
+              </label>
+
+
+              <label class="edition__label" for="check8">
+                <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check8">
+                <span class="edition__span">Публицистика</span>
+              </label>
+
+
+              <label class="edition__label" for="check9">
+                <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check9">
+                <span class="edition__span">Путеводители</span>
+              </label>
+
+
+              <label class="edition__label" for="check10">
+                <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check10">
+                <span class="edition__span">Философия</span>
+              </label>
+
+
+              <label class="edition__label" for="check11">
+                <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check11">
+                <span class="edition__span">Учебная литература</span>
+              </label>
+
+
+              <label class="edition__label" for="check12">
+                <input class="edition__check" type="checkbox" name="check" value="Бестселлеры" id="check12">
+                <span class="edition__span">Журналы и газеты</span>
+              </label>
+
+
               <div class="edition-price">
                 <h3 class="edition__h3 title-h3">Цена</h3>
                 <form action="https://jsonplaceholder.typicode.com/posts" class="edition-price__form">
@@ -2785,6 +2766,8 @@
             </nav>
           </div>
 
+
+
           <div class="swiper-container edition-swiper">
             <div class="edition-navigation">
               <button class="edition-btn edition-prev"></button>
@@ -2795,19 +2778,21 @@
               <li class="swiper-slide edition__item">
                 <img class="edition-image" src="img/edition-img.png" alt="">
                 <ul class="edition-info">
-                  <li class="edition__strong">Искусство цвета<span class="edition-span">620 руб</span>
+                  <li class="edition__strong">Искусство цвета
                   </li>
                   <li class="edition__strong-sub"> Иттен, Иоханнес</li>
+                  <li><span class="edition__span-2">620 руб</span></li>
                 </ul>
+
                 <button class="edition__button btn">Заказать</button>
               </li>
               <li class="swiper-slide edition__item">
                 <img class="edition-image" src="img/edition-img2.png" alt="">
                 <ul class="edition-info">
-                  <li class="edition__strong">Типографика<span class="edition-span">2 450 руб</span>
+                  <li class="edition__strong">Типографика
                   </li>
                   <li class="edition__strong-sub">Рудер, Эмиль</li>
-
+                  <li><span class="edition__span-2">2 450 руб</span></li>
                 </ul>
                 <button class="edition__button btn">Заказать</button>
               </li>
@@ -2815,9 +2800,10 @@
               <li class="swiper-slide edition__item">
                 <img class="edition-image" src="img/edition-img-3.png" alt="">
                 <ul class="edition-info">
-                  <li class="edition__strong">Книга про буквы<span class="edition-span">2 450
-                      руб</span></li>
+                  <li class="edition__strong">Книга про буквы</li>
                   <li class="edition__strong-sub">Гордон, Юрий</li>
+                  <li><span class="edition__span-2">2 450
+                      руб</span></li>
                 </ul>
                 <button class="edition__button btn">Заказать</button>
               </li>
@@ -2825,9 +2811,10 @@
               <li class="swiper-slide edition__item">
                 <img class="edition-image" src="img/edition-img-4.png" alt="">
                 <ul class="edition-info">
-                  <li class="edition__strong">Книга про буквы<span class="edition-span">2 450
-                      руб</span></li>
+                  <li class="edition__strong">Книга про буквы</li>
                   <li class="edition__strong-sub">Гордон, Юрий</li>
+                  <li><span class="edition__span-2">2 450
+                      руб</span></li>
                 </ul>
                 <button class="edition__button btn">Заказать</button>
               </li>
@@ -2835,9 +2822,10 @@
               <li class="swiper-slide edition__item">
                 <img class="edition-image" src="img/edition-img-5.png" alt="">
                 <ul class="edition-info">
-                  <li class="edition__strong">Книга про буквы<span class="edition-span">2 450
-                      руб</span></li>
+                  <li class="edition__strong">Книга про буквы</li>
                   <li class="edition__strong-sub">Гордон, Юрий</li>
+                  <li><span class="edition__span-2">2 450
+                      руб</span></li>
                 </ul>
                 <button class="edition__button btn">Заказать</button>
               </li>
@@ -2845,19 +2833,21 @@
               <li class="swiper-slide edition__item">
                 <img class="edition-image" src="img/edition-img-6.png" alt="">
                 <ul class="edition-info">
-                  <li class="edition__strong">Книга про буквы<span class="edition-span">2 450
-                      руб</span></li>
+                  <li class="edition__strong">Книга про буквы</li>
                   <li class="edition__strong-sub">Гордон, Юрий</li>
+                  <li><span class="edition__span-2">2 450
+                      руб</span></li>
                 </ul>
                 <button class="edition__button btn">Заказать</button>
               </li>
               <li class="swiper-slide edition__item">
                 <img class="edition-image" src="img/edition-img-7.png" alt="">
                 <ul class="edition-info">
-                  <li class="edition__strong">Искусство и визуальное в...<span class="edition-span">2
-                      200 руб</span>
+                  <li class="edition__strong">Искусство и визуальное в...
                   </li>
                   <li class="edition__strong-sub"> Арнхейм, Рудольф</li>
+                  <li><span class="edition__span-2">2
+                      200 руб</span></li>
                 </ul>
                 <button class="edition__button btn">Заказать</button>
               </li>
@@ -2867,7 +2857,7 @@
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container progects-container">
         <h2 class="projects-title">Проекты</h2>
         <div class="projects-content">
@@ -2950,7 +2940,7 @@
       </div>
 
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
         <h2 class="title contacts__title">Контакты</h2>
       </div>
@@ -3071,6 +3061,7 @@
   <script src="js/choices.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru"></script>
   <script src="js/main.js"></script>
+  <script src="js/checkbox.js"></script>
 </body>
 
 </html>

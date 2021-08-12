@@ -3,8 +3,10 @@ const choices = new Choices(element, {
   searchEnabled: false
 });
 
-
-
+//search-input 1024
+$(".search-top__btn").click(function () {
+  $(".search-top__input").addClass("search-top__input-active")
+})
 
 $(document).ready(function () {
   $('.header__burger').click(function (event) {
@@ -216,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function setCards() {
     }
 
     params = {
-      // здесь, в параметрах необходимо задать настройки
+     
       MIN_DESKTOP: 960,
       MIN_TABLET: 581,
       DESKTOP_CARDS: 3,
@@ -434,7 +436,6 @@ document.addEventListener("DOMContentLoaded", function setCards() {
   const cards = new Cards();
 
 
-  /* Конец копирования */
 });
 
 
@@ -447,15 +448,9 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesPerColumnFill: "row",
     slidesPerView: 1,
     slidesPerColumn: 1,
-    spaceBetween: 50,
+    spaceBetween: 10,
 
-    //Бесконечное листание страниц
-    speed: 2000, //Интервал ожидания
-
-    autoplay: {
-      delay: 13000, //Интервал ожидания
-      disableOnInteraction: false,
-    },
+   
 
 
     pagination: {
@@ -470,7 +465,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     breakpoints: {
-      581: {
+      320: {
+         slidesPerColumnFill: "row",
+    slidesPerView: 2,
+    slidesPerColumn: 4,
+        spaceBetween: 30,
+   
+      },
+      481: {
         slidesPerView: 2,
         slidesPerColumn: 1,
         spaceBetween: 30
@@ -490,7 +492,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
 
     on: {
-      /* исправляет баг с margin-top остающимся при смене брейкпоинта */
+     
       beforeResize: function () {
         this.slides.forEach((el) => {
           el.style.marginTop = "";
@@ -535,7 +537,13 @@ var slider3 = new Swiper('.slider3', {
     clickable: true,
   },
 
+ //Бесконечное листание страниц
+    speed: 2000, //Интервал ожидания
 
+    autoplay: {
+      delay: 13000, //Интервал ожидания
+      disableOnInteraction: false,
+    },
 
 
   navigation: {
@@ -619,25 +627,7 @@ function init() {
   myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
 }
 
-// Функция ymaps.ready() будет вызвана, когда
-// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-//ymaps.ready(init);
-//function init() {
-// Создание карты.
-// var myMap = new ymaps.Map("map", {
-// Координаты центра карты.
-// Порядок по умолчанию: «широта, долгота».
-// Чтобы не определять координаты центра карты вручную,
-// воспользуйтесь инструментом Определение координат.
-//center: [55.76, 37.64],
-// Уровень масштабирования. Допустимые значения:
-// от 0 (весь мир) до 19.
-//zoom: 7,
-//controls: []
-//}, {
-// suppressMapOpenBlock: true
-// });
-//}
+//form
 var selector = document.querySelector("input[type='tel']");
 var im = new Inputmask("+7 (999)-999-99-99");
 
@@ -671,9 +661,3 @@ new JustValidate('.form', {
 });
 
 
-
-  $('.h3-toggler').click(function () {
-        $(".edition__list_label").toggle();
-        $(this).toggleClass("active");
-
-    });
